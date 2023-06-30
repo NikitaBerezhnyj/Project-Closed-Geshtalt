@@ -1,0 +1,22 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 3172, in script
+    mak "Я Максим"
+Exception: Sayer 'mak' is not defined.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 3172, in script
+    mak "Я Максим"
+  File "/home/nikname/Завантажене/renpy-8.1.1-sdk/renpy/ast.py", line 890, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "/home/nikname/Завантажене/renpy-8.1.1-sdk/renpy/ast.py", line 783, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'mak' is not defined.
+
+Linux-6.1.31-2-MANJARO-x86_64-with-glibc2.37 x86_64
+Ren'Py 8.1.1.23060707
+Останній відпочинок 0.1
+Sat Jun 24 23:48:33 2023

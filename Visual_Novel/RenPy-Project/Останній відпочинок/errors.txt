@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/screens.rpy", line 453: bar expects a non-empty block.
+    bar value time range timer_range xalign 0.5 yalign 0.2 xmaximum 300 at alpha_dissolve:
+                                                                                          ^
+
+Ren'Py Version: Ren'Py 8.1.1.23060707
+Sat Jun 24 00:44:02 2023
