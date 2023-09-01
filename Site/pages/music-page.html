@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="icon" href="../img/icon.png">
+    <title>Project Close Geshtalt</title>
+</head>
+<body>
+    <!-- Прогрузка сторінки -->
+    <div class="loader">
+        <img src="../img/icon.png">
+    </div>
+    <script>
+        const loader = document.querySelector(".loader");
+        window.addEventListener("load", () => {
+            loader.classList.add("loader--hidden");
+            loader.addEventListener("transitionend", () => {
+                loader.remove();
+            });
+        });
+    </script>
+    <div class="main-container">
+        <!-- Хедер для всіх сторінок -->
+        <header class="header">
+            <div>
+                <h1>Project Close Geshtalt</h1>
+                <img src="../img/icon.png">
+            </div>
+            <nav>
+                <ul>
+                    <a href="../index.html"><li>Головна</li></a>
+                    <a href="#"><li>Музика</li></a>
+                    <a href="visual-novel-page.html"><li>Гра</li></a>
+                    <a href="comics-page.html"><li>Комікс</li></a>
+                    <a href="book-page.html"><li>Книжка</li></a>
+                    <a href="update-page.html"><li>Оновлення</li></a>
+                </ul>
+            </nav>
+        </header>
+        <!-- Короткий опис проекту -->
+        <div class="hero">
+            <div>
+                <h1>Музика</h1>
+                <p>Я багато років планував написати свій перший музичний альбом. Для мене музичний альбом – це не просто збірка з 10 +/- треків. Це щось значуще, це якась історія. Саме тому я вирішив написати концептуальний альбом. 
+                    Перший альбом називається <a href="#album-first">«Поет без имени»</a>. Він написаний російською мовою і розповідає про деякий етап мого життя, який прикрашений деякими обставинами та образами, але події були реальними.
+                    Свій другий альбом я почав писати ще навіть не закінчивши перший. У 2022 році Росія вторглася в Україну. Я зрозумів, що не можу писати пісні російською, тож вирішив зібрати весь свій досвід та всі свої емоції за рік та вкласти їх у альбом, який отримав назву <a href="#album-second">"Помилка вцілілого"</a>.
+                    Весь альбом я робив сам від початку і до кінця. Я написав біти, тексти та зробив зведення треків також самотужки.
+                    Сподіваюся, вам сподобається те, що у мене вийшло. <span>Приємного прослуховування!</span>
+                </p>
+            </div>
+        </div>
+        <div class="main-audio-content">
+            <div class="audio-content" id="album-first">
+                <div class="album-header">
+                    <h2>Поэт без имени</h2>
+                    <img src="../img/album1.jpg">
+                </div>
+                <p>
+                    Альбом "Поэт без имени" був для мене особливим проектом. Він став результатом важкого періоду в моєму житті, 
+                    коли я відчував сильний упадок сил та падіння мотивації з натхненням. Тоді я був зовсім іншою людино, я навіть писав його ще російською, тож у якоусь сенсі цей альбом є зліпком мене минулого.
+                    Я створював його у той час коли я постійно думав про те, щоб припинити свою музичну кар'єру, але бажання довести хоч щось до кінця допомогло мені.
+                    Цей альбом був створений на основі реальних подій у моєму житті, які сильно вплинули на моє світосприйняття. 
+                    Він вийшов не таким, яким я його спочатку планував, але я все одно пишаюся ним. Я вклав у нього всю свою душу, і я вважаю, що він заслуговує на увагу. <br>
+                    <span>Тож я сподіваюся, що ви все ж послухаєте його і знайдете в ньому щось для себе.</span>
+                </p>
+                <div class="album-items">
+                    <span>1. Поэт без имени (intro)</span>
+                    <audio src="../materials/music/Поєт_без_имени/1.Поєт без имени.mp3" controls></audio>
+                    <span>2. Моя милая Герда</span>
+                    <audio src="../materials/music/Поєт_без_имени/2. Моя милая Герда.mp3" controls></audio>
+                    <span>3. Азазель</span>
+                    <audio src="../materials/music/Поєт_без_имени/3. Азазель.mp3" controls></audio>
+                    <span>4. А я родился в одиночестве... (skit)</span>
+                    <audio src="../materials/music/Поєт_без_имени/4. А я родился в одиночестве....mp3" controls></audio>
+                    <span>5. Записки сумосшедшего</span>
+                    <audio src="../materials/music/Поєт_без_имени/5. Записки сумосшедшего.mp3" controls></audio>
+                    <span>6. Персональное царство Морфея (skit)</span>
+                    <audio src="../materials/music/Поєт_без_имени/6. Персональное царство Морфея.mp3" controls></audio>
+                    <span>7. Заебало</span>
+                    <audio src="../materials/music/Поєт_без_имени/7. Заебало.mp3" controls></audio>
+                    <span>8. NikName</span>
+                    <audio src="../materials/music/Поєт_без_имени/8. NikName.mp3" controls></audio>
+                    <span>9. Письмо другу, которого нет (outro)</span>
+                    <audio src="../materials/music/Поєт_без_имени/9. Письмо другу, которого нет.mp3" controls></audio>
+                    <p></p>
+                </div>
+            </div>
+            <div class="audio-content" id="album-second">
+                <div class="album-header">
+                    <h2>Помилка вцілілого</h2>
+                    <img src="../img/album2.jpg">
+                </div>
+                <p>
+                    Альбом "Помилка вцілілого" став для мене місцем, де я зміг висловити свої думки та емоції, які я відчував протягом року.
+                    Це був найважливіший період у моєму житті, і я не знаю, як би я впорався з ним без музики.
+                    Цей рік дуже сильно змінив мене. Я більше не той, хто був раніше. Я став сильнішим, але водночас і більш вразливим.
+                    Я навчився цінувати кожен момент життя, і я більше не боюся висловлювати свої думки своєю мовою.
+                    Тому я хотів, щоб цей альбом був не просто збіркою пісень, а цілісною історією моєї внутрішньої боротьби.
+                    Я хотів, щоб він був нагадуванням про те, що ми всі переживаємо складні часи, і що ми можемо продовжувати творити та жити, навіть коли все здається втраченим.<br>
+                    <span>Я сподіваюсь, що альбом вам сподобається, тож я бажаю вам приємного прослуховування</span>
+                </p>
+                <div class="album-items">
+                    <span>1. Лютий</span>
+                    <audio src="../materials/music/Помилка_вцілілого/1. Лютий.mp3" controls></audio>
+                    <span>2. 23.02 (skit)</span>
+                    <audio src="../materials/music/Помилка_вцілілого/2. 23.02 .mp3" controls></audio>
+                    <span>3. Вогні великого міста</span>
+                    <audio src="../materials/music/Помилка_вцілілого/3. Вогні великого міста.mp3" controls></audio>
+                    <span>4. Руzzкій воєнний корабль</span>
+                    <audio src="../materials/music/Помилка_вцілілого/4. Руzzкій воєнний корабль.mp3" controls></audio>
+                    <span>5. Знову тихо (skit)</span>
+                    <audio src="../materials/music/Помилка_вцілілого/5. Знову тихо.mp3" controls></audio>
+                    <span>6. Помилка вцілілого</span>
+                    <audio src="../materials/music/Помилка_вцілілого/6. Помилка вцілілого.mp3" controls></audio>
+                    <span>7. Заповіт (skit)</span>
+                    <audio src="../materials/music/Помилка_вцілілого/7. Заповіт.mp3" controls></audio>
+                    <span>8. Завтра буде гірше</span>
+                    <audio src="../materials/music/Помилка_вцілілого/8. Завтра буде гірше.mp3" controls></audio>
+                    <span>9. От би...</span>
+                    <audio src="../materials/music/Помилка_вцілілого/9. От би....mp3" controls></audio>
+                    <span>10. Навчи мене любити</span>
+                    <audio src="../materials/music/Помилка_вцілілого/10. Навчи мене любити.mp3" controls></audio>
+                </div>
+            </div>
+        </div>
+        <!-- Футер для всіх сторінок -->
+        <footer>
+            <hr>
+            <div class="footer">
+                <div>
+                    <h1>Project Close Geshtalt</h1>
+                    <img src="../img/icon.png">
+                </div>
+                <p>Дякую, що відвідали мій сайт!</p>
+            </div>
+        </footer>
+        <!-- Кнопка для скролу у верх -->
+        <a href="#" class="to-top">
+            <span>Up</span>
+        </a>
+        <script src="../scripts/main.js"></script>
+    </div>
+</body>
+</html>

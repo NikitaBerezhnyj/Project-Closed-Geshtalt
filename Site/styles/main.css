@@ -1,0 +1,448 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 10rem;
+}
+body{
+    color: #EDEDED;
+    background-color: #171717;
+    font-family: 'Montserrat', sans-serif;
+}
+.main-container{
+    padding: 48px;
+}
+/* Loader */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #171717;
+}
+.loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+.loader img {
+    width: 15%;
+    animation: loading 1s ease infinite;
+}
+@keyframes loading {
+    from { transform: rotate(0turn); }
+    to { transform: rotate(1turn); }
+}
+/* Header */
+.header{
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 72px;
+    position: sticky;
+    top: 0;
+    padding: 24px;
+    background-color: #171717;
+}
+.header div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.header div h1{
+    color: #FFFFFF;
+    font-size: 1.5em;
+    line-height: 1em;
+}
+.header div img{
+    height: 100%;
+    margin-left: 12px;
+}
+.header nav{
+    width: 40%;
+}
+.header nav ul{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.header nav ul a{
+    color: #EDEDED;
+    font-size: 1.3em;
+    line-height: 0.5em;
+    text-decoration: none;
+    transition: .5s;
+}
+.header nav ul a:hover{
+    color: #DA0037;
+    transition: .5s;
+}
+/* Main Content */
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 72px;
+}
+.hero div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 24px;
+}
+.hero div h1{
+    color: #DA0037;
+    font-size: 4em;
+    line-height: 1.5em;
+}
+.hero div h2{
+    color: #FFFFFF;
+    font-size: 1.5em;
+    line-height: 1em;
+    margin-bottom: 24px; 
+}
+.hero div p{
+    color: #FFFFFF;
+    font-size: 1em;
+    line-height: 1.7em;
+}
+.hero div p a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.hero div p span{
+    color: #DA0037;
+    line-height: 2em;
+}
+.hero div img{
+    width: 50%;
+    margin: 0 auto;
+}
+.hero-img{
+    text-align: center;
+}
+.hero-presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.hero-presentation a{
+    color: #DA0037;
+    line-height: 1em;
+    text-decoration: none;
+}
+.prsentatin-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 96px;
+}
+.prsentatin-item:nth-child(2n){
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+#update{
+    margin: 0 auto;
+}
+.prsentatin-item div{
+    width: 45%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.prsentatin-item div h2{
+    color: #DA0037;
+    font-size: 2em;
+    line-height: 1.5em;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+.prsentatin-item div p{
+    margin-bottom: 24px;
+}
+.prsentatin-item div img{
+    width: 75%;
+}
+.src{
+    color: #DA0037;
+    margin-bottom: 24px;
+}
+.btn{
+    width: 15%;
+    color: #EDEDED;
+    background-color: #DA0037;
+    padding: 12px;
+    border-radius: 10%;
+    text-decoration: none;
+    display: inline-block;
+    transition: .5s;
+}
+.btn:hover{
+    width: 20%;
+    font-size: 1.3em;
+    color: #EDEDED;
+    background-color: #DA0037;
+    padding: 12px;
+    border-radius: 10%;
+    text-decoration: none;
+    transition: .5s;
+}
+.prsentatin-item p{
+    color: #FFFFFF;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+.prsentatin-item p span{
+    font-weight: bold;
+    /* color: #DA0037; */
+}
+/* Music Page */
+.main-audio-content{
+    display: flex;
+    justify-content: space-between;
+}
+.audio-content{
+    width: 47%;
+    padding: 10px;
+}
+.album-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-audio-content div h2{
+    color: #DA0037;
+    font-size: 2em;
+    line-height: 1.5em;
+    margin-bottom: 24px;
+}
+.main-audio-content div p{
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-bottom: 24px;
+}
+.main-audio-content div p span{
+    color: #DA0037;
+}
+.main-audio-content div img{
+    width: 70%;
+    margin-bottom: 24px;
+}
+.album-items{
+    width: 90%;
+    padding: 10px;
+}
+.album-items audio{
+    width: 100%;
+    padding: 10px 0;
+}
+/* Game Page */
+.game-container{
+    display: flex;
+    justify-content: space-between;
+}
+.game-header{
+    width: 100%;
+}
+.game-header h1{
+    color: #DA0037;
+    font-size: 3em;
+    line-height: 1.5em;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.game-header p{
+    color: #FFFFFF;
+    font-size: 1em;
+    line-height: 2em;
+    margin-bottom: 24px;
+}
+.game-header p span{
+    color: #DA0037;
+    font-size: 1em;
+    line-height: 2em;
+    margin-bottom: 24px;
+}
+.game-header a{
+    text-align: center;
+}
+.game-screens{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.game-screens img{
+    width: 30%;
+    margin-bottom: 48px;
+}
+/* Comics Page */
+#About{
+    width: 45%;
+    margin: 0 auto;
+    text-align: center;
+}
+#About img{
+    width: 75%;
+}
+#About h1{
+    color: #DA0037;
+    font-size: 2em;
+    line-height: 2em;
+}
+#About p{
+    font-size: 1em;
+    line-height: 1.5em;
+}
+.tab {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 43%;
+    margin-bottom: 48px;
+}
+.tab button {
+    background-color: inherit;
+    color: #ffffff;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.tab button:hover {
+    font-size: 101%;
+    text-decoration: underline;
+}
+.tab button.active {
+    text-decoration: underline;
+}
+.reader-comics{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+.reader-comics img{
+    width: 65%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.reader-comics button{
+    cursor: pointer;
+    background-color: #DA0037;
+    color: #171717;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+.comics-num{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 48px;
+}
+.comics-num span{
+    font-size: 1.3em;
+    line-height: 0.5em;
+}
+/* Book Page */
+.book-btn{
+    width: 50%;
+    margin: 24px 0 48px 0;
+}
+.reader-book{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.book{
+    width: 50%;
+    height: 100%;
+    margin-bottom: 72px;
+}
+/* Update page */
+.countdown-main-container{
+    height: 60ch;
+    padding: 0;
+}
+.countdown-main-container h1{
+    color: #DA0037;
+    font-size: 3.5em;
+    line-height: 1.5em;
+    text-align: center;
+}
+.countdown-main-container p{
+    color: #FFFFFF;
+    font-size: 1em;
+    line-height: 1.5em;
+    text-align: center;
+}
+.countdown-container {
+    height:  70%;
+    display: flex;
+    justify-content: space-around;
+    padding: 5%;
+}
+.countdown-container p {
+    text-align: center;
+    font-size: 3rem;
+}
+/* Scrol up button */
+.to-top{
+    background-color: #DA0037;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #171717;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+.to-top.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+/* Footer */
+.footer{
+    /* height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5%; */
+
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+}
+.footer div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.footer div h1{
+    color: #FFFFFF;
+    font-size: 1.5em;
+    line-height: 1em;
+}
+.footer div img{
+    height: 100%;
+    margin-left: 12px;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="icon" href="../img/icon.png">
+    <title>Project Close Geshtalt</title>
+</head>
+<body>
+    <!-- Прогрузка сторінки -->
+    <div class="loader">
+        <img src="../img/icon.png">
+    </div>
+    <script>
+        const loader = document.querySelector(".loader");
+        window.addEventListener("load", () => {
+            loader.classList.add("loader--hidden");
+            loader.addEventListener("transitionend", () => {
+                loader.remove();
+            });
+        });
+    </script>
+    <div class="main-container">
+        <!-- Хедер для всіх сторінок -->
+        <header class="header">
+            <div>
+                <h1>Project Close Geshtalt</h1>
+                <img src="../img/icon.png">
+            </div>
+            <nav>
+                <ul>
+                    <a href="../index.html"><li>Головна</li></a>
+                    <a href="music-page.html"><li>Музика</li></a>
+                    <a href="visual-novel-page.html"><li>Гра</li></a>
+                    <a href="comics-page.html"><li>Комікс</li></a>
+                    <a href="#"><li>Книжка</li></a>
+                    <a href="update-page.html"><li>Оновлення</li></a>
+                </ul>
+            </nav>
+        </header>
+        <!-- Короткий опис проекту -->
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'About')" id="defaultOpen">Про комікс</button>
+            <button class="tablinks" onclick="openCity(event, 'Reading')">Читати</button>
+        </div>
+        <!-- Короткий опис проекту -->
+        <div id="About" class="tabcontent">
+            <img src="../img/book.png" alt="">
+            <h1>Тридцяти рік після падіння метеорита</h1>
+            <p>
+                Збірник розповідей "Тридцяти рік після падіння метеорита" розповість вам історії жителів останнього міста на землі, яка змінилась до невпізнання після падіння метеорита.
+                Чи захочеш ти жити у цьому світі вирішувати тобі, але для початку було б добре дізнатись про цей світ більше
+
+
+                Збірник розповідей "Тридцяти рік після падіння метеорита" розповість вам про життя людей в постапокаліптичному світі, який змінився до невпізнання після падіння великого метеорита.
+                Ви діхнаєтесь історії життя різних людей з різних прошарків суспільства, в яких можна буде побачити зліпок устрою життя нового світу.
+                Чи захотіли б ви жити в цьому світі? Це питання, на яке ви повинні відповісти самі. Але для цього вам доведеться зануритись у цю книжку та дізнатись більше про нього.
+            </p>
+            <a class="btn book-btn" href="../materials/Book.pdf" download>Завантажити книгу</a>
+        </div>
+        <!-- Читалка Книги -->
+        <div id="Reading" class="tabcontent">
+            <div class="reader-book">
+                <iframe src="../materials/Book.pdf" frameborder="0" class="book"></iframe>
+            </div>
+        </div>
+        <!-- Футер для всіх сторінок -->
+        <footer>
+            <hr>
+            <div class="footer">
+                <div>
+                    <h1>Project Close Geshtalt</h1>
+                    <img src="../img/icon.png">
+                </div>
+                <p>Дякую, що відвідали мій сайт!</p>
+            </div>
+        </footer>
+        <!-- Кнопка для скролу у верх -->
+        <a href="#" class="to-top">
+            <span>Up</span>
+        </a>
+        <script src="../scripts/main.js"></script>
+    </div>
+</body>
+</html>

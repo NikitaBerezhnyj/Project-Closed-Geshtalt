@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="icon" href="../img/icon.png">
+    <title>Project Close Geshtalt</title>
+</head>
+<body>
+    <!-- Прогрузка сторінки -->
+    <div class="loader">
+        <img src="../img/icon.png">
+    </div>
+    <script>
+        const loader = document.querySelector(".loader");
+        window.addEventListener("load", () => {
+            loader.classList.add("loader--hidden");
+            loader.addEventListener("transitionend", () => {
+                loader.remove();
+            });
+        });
+    </script>
+    <div class="main-container">
+        <!-- Хедер для всіх сторінок -->
+        <header class="header">
+            <div>
+                <h1>Project Close Geshtalt</h1>
+                <img src="../img/icon.png">
+            </div>
+            <nav>
+                <ul>
+                    <a href="../index.html"><li>Головна</li></a>
+                    <a href="music-page.html"><li>Музика</li></a>
+                    <a href="visual-novel-page.html"><li>Гра</li></a>
+                    <a href="#"><li>Комікс</li></a>
+                    <a href="book-page.html"><li>Книжка</li></a>
+                    <a href="update-page.html"><li>Оновлення</li></a>
+                </ul>
+            </nav>
+        </header>
+        <!-- Перемикання сторінок -->
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'About')" id="defaultOpen">Про комікс</button>
+            <button class="tablinks" onclick="openCity(event, 'Reading')">Читати</button>
+        </div>
+        <!-- Короткий опис проекту -->
+        <div id="About" class="tabcontent">
+            <img src="../img/comics.png">
+            <h1>Літера смерті. Останній вирок</h1>
+            <p>
+                Комікс "Літера смерті. Останній вирок" розповісь вам історію Віктора, одного з бетатестерів новітнього гаджета Его.
+                Віктор – звичайний чоловік, який мріє про краще майбутнє для свого міста. 
+                Але одного дня гаджет дає збій і єдиним питанням, яке лишається у його голові стає:
+                "Якщо вбити усіх корупціонерів міста, чи стане жити легше, чи доведеться знищити усе місто цілком?"
+            </p>
+            <a class="btn book-btn" href="../materials/Comics.pdf" download>Завантажити комікс</a>
+        </div>
+        <!-- Читалка коміксу -->
+        <div id="Reading" class="tabcontent">
+            <div class="reader-comics">
+                <button class="left-btn-comics" id="left-btn-comics"><</button>
+                <img src="../img/comics/page1.png" id="page-comics">
+                <button class="right-btn-comics" id="right-btn-comics">></button>
+            </div>
+            <div class="comics-num">
+                <span id="page-num">1</span>
+                <span> / 56</span>
+            </div>
+        </div>
+        <!-- Футер для всіх сторінок -->
+        <footer>
+            <hr>
+            <div class="footer">
+                <div>
+                    <h1>Project Close Geshtalt</h1>
+                    <img src="../img/icon.png">
+                </div>
+                <p>Дякую, що відвідали мій сайт!</p>
+            </div>
+        </footer>
+        <!-- Кнопка для скролу у верх -->
+        <a href="#" class="to-top">
+            <span>Up</span>
+        </a>
+        <script src="../scripts/main.js"></script>
+    </div>
+</body>
+</html>

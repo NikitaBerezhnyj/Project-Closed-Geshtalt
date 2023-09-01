@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="icon" href="../img/icon.png">
+    <title>Project Close Geshtalt</title>
+</head>
+<body>
+    <!-- Прогрузка сторінки -->
+    <div class="loader">
+        <img src="../img/icon.png">
+    </div>
+    <script>
+        const loader = document.querySelector(".loader");
+        window.addEventListener("load", () => {
+            loader.classList.add("loader--hidden");
+            loader.addEventListener("transitionend", () => {
+                loader.remove();
+            });
+        });
+    </script>
+    <div class="main-container">
+        <!-- Хедер для всіх сторінок -->
+        <header class="header">
+            <div>
+                <h1>Project Close Geshtalt</h1>
+                <img src="../img/icon.png">
+            </div>
+            <nav>
+                <ul>
+                    <a href="../index.html"><li>Головна</li></a>
+                    <a href="music-page.html"><li>Музика</li></a>
+                    <a href="visual-novel-page.html"><li>Гра</li></a>
+                    <a href="comics-page.html"><li>Комікс</li></a>
+                    <a href="book-page.html"><li>Книжка</li></a>
+                    <a href="#"><li>Оновлення</li></a>
+                </ul>
+            </nav>
+        </header>
+        <!-- Короткий опис проекту -->
+        <div class="countdown-main-container">
+            <h1>Часу до оновлення</h1>
+            <p>4 лютого 2024 року очікується велике оновлення по всім проектам.</p>
+            <p>До оновлення лишилось: </p>
+            <div class="countdown-container">
+                <div class="days">
+                    <p>Днів</p>
+                    <p id="days">0</p>
+                </div>
+                <div class="days">
+                    <p>Годин</p>
+                    <p id="hours">0</p>
+                </div>
+                <div class="days">
+                    <p>Хвилин</p>
+                    <p id="minutes">0</p>
+                </div>
+                <div class="days">
+                    <p>Секунд</p>
+                    <p id="seconds">0</p>
+                </div>
+            </div>
+        </div>
+        <!-- Футер для всіх сторінок -->
+        <footer>
+            <hr>
+            <div class="footer">
+                <div>
+                    <h1>Project Close Geshtalt</h1>
+                    <img src="../img/icon.png">
+                </div>
+                <p>Дякую, що відвідали мій сайт!</p>
+            </div>
+        </footer>
+        <!-- Кнопка для скролу у верх -->
+        <a href="#" class="to-top">
+            <span>Up</span>
+        </a>
+    </div>
+    <script src="../scripts/main.js"></script>
+</body>
+</html>

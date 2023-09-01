@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="img/icon.png">
+    <title>Project Close Geshtalt</title>
+</head>
+<body>
+    <!-- Прогрузка сторінки -->
+    <div class="loader">
+        <img src="../img/icon.png">
+    </div>
+    <script>
+        const loader = document.querySelector(".loader");
+        window.addEventListener("load", () => {
+            loader.classList.add("loader--hidden");
+            loader.addEventListener("transitionend", () => {
+                loader.remove();
+            });
+        });
+    </script>
+    <div class="main-container">
+        <!-- Хедер для всіх сторінок -->
+        <header class="header">
+            <div>
+                    <h1>Project Close Geshtalt</h1>
+                    <img src="img/icon.png">
+            </div>
+            <nav>
+                <ul>
+                    <a href="#"><li>Головна</li></a>
+                    <a href="pages/music-page.html"><li>Музика</li></a>
+                    <a href="pages/visual-novel-page.html"><li>Гра</li></a>
+                    <a href="pages/comics-page.html"><li>Комікс</li></a>
+                    <a href="pages/book-page.html"><li>Книжка</li></a>
+                    <a href="pages/update-page.html"><li>Оновлення</li></a>
+                </ul>
+            </nav>
+        </header>
+        <!-- Короткий опис проекту -->
+        <section class="hero">
+            <div>
+                <h1>Привіт, я Нікіта</h1>
+                <h2>Ви знаходитесь на сторінці мого проєкт в якому я закриваю всі свої творчі гештальти</h2>
+                <p>Ще з дитинства я постійно намагався пробувати різне, від програмування до написання маленьких розмповідей і музики, проте я майже ніколи не доводив жодного проекту до кінця, тож у мене з'явився деякий гештальт пов'язаний з кожною сферою в якій я щось пробував, тому на час коли я мав би закінчувати школу, тобто літо 2023 року, я вирішив створити по одному готовому проекту з кожної галузі, щоб показати собі, а також і вам, чого я навчився за весь цей час.
+                    На цій сторінці ви зможете ознайомитись з усіма проектами, а також завантажити собі їх цифрові версії.
+                    <span>Отже я презентую вам:</span>
+                    <div class="hero-presentation">
+                        <a href="#music"><br>1) Музичний альбом <span>(Музика)</span></a>
+                        <a href="#game"><br>2) Візуальну новелу <span>(Програмування)</span></a>
+                        <a href="#comics"><br>3) Комікс <span>(Малювання)</span></a>
+                        <a href="#book"><br>4) Книжку <span>(Письменництво)</span></a>
+                    </div>
+                </p>
+            </div>
+            <div class="hero-img">
+                <img src="img/photo.png">
+            </div>
+        </section>
+        <!-- Коротка презентація всього, що було зроблено за проект -->
+        <section class="presentation">
+            <!-- Музика -->
+            <div class="prsentatin-item">
+                <div id="music">
+                    <h2>Музика</h2>
+                    <p>
+                        <span>На сторінці Музика ви зможете прослухати два альбоми:</span> <br>
+                        <span>Поэт без имени</span> - це альбом, над яким я працював у важкий період свого життя. Я відчував сильний упадок сил та падіння мотивації, але бажання довести хоч щось до кінця допомогло мені. Цей альбом був створений на основі реальних подій у моєму житті, які сильно вплинули на моє світосприйняття. <br>
+                        <span>Помилка вцілілого</span> - це альбом, який я створив, щоб висловити свої думки та емоції, які я відчував протягом року. Це був найважливіший період у моєму житті, і я не знаю, як би я впорався з ним без музики. Цей рік дуже сильно змінив мене. Я став сильнішим, але водночас і більш вразливим. Я навчився цінувати кожен момент життя, і я більше не боюся висловлювати свої думки своєю мовою. <br>
+                        Я вклав у ці альбоми всю свою душу, і я вважаю, що вони заслуговують на увагу. Я сподіваюся, що ви послухаєте їх і знайдете в них щось для себе.
+                    </p>
+                    <a class="src" href="pages/music-page.html">Дізнатись більше</a>
+                    <a href="/materials/Music.zip" target="_blank" download="NikName albums.zip" class="btn">Завантажити</a>
+                </div>
+                <div>
+                    <img src="img/music.png">
+                </div>
+            </div>
+            <!-- Візуальна новела -->
+            <div class="prsentatin-item">
+                <div id="game">
+                    <h2>Гра <span>(Візуальна новела)</span></h2>
+                    <p> 
+                        <span>На сторінці Гра ви зможете:</span><br>
+                        Ознайомитися з візуальною новелою під назвою <span>"Останній відпочинок"</span>. 
+                        Ця новела розповість вам про звичайного жителя міста Кіфі на ім'я Олексій. <br>
+                        Дізнатися про те, як звичайне життя Олексія руйнується з падінням метеорита на місто. 
+                        Люди, що вдихають газ від метеорита, перетворюються на гуманоїдів. <br>
+                        Приймати рішення, які впливатимуть на те, чи зможе Олексій вижити.                    
+                    </p>
+                    <a class="src" href="pages/visual-novel-page.html">Дізнатись більше</a>
+                    <a href="/materials/The last vacation.zip" target="_blank" download="The last vacation.zip" class="btn">Завантажити</a>
+                </div>
+                <div>
+                    <img src="img/visual-novel.png">
+                </div>
+            </div>
+            <!-- Комікс -->
+            <div class="prsentatin-item">
+                <div id="comics">
+                    <h2>Комікс</h2>
+                    <p>
+                        <span>На сторінці Комікс ви зможете:</span><br>
+                        Ознайомитись та заванажити комікс <span>"Літера смерті. Останній вирок"</span>.
+                        Цей комікс розповість вам історію Віктора, який бореться за виживання свого рідного міста.
+                        Місто погрязло в корупції, але його жителі все ще хочуть жити та розвиватися.
+                        Чи зможе Віктор врятувати своє місто від себе ж самого?
+                    </p>
+                    <a class="src" href="pages/comics-page.html">Дізнатись більше</a>
+                    <a class="btn" href="/materials/Comics.pdf" download>Завантажити</a>
+                </div>
+                <div>
+                    <img src="img/comics.png">
+                </div>
+            </div>
+            <!-- Книга -->
+            <div class="prsentatin-item">
+                <div id="book">
+                    <h2>Книга</h2>
+                    <p>
+                        <span>На сторінці Книга ви зможете:</span><br>
+                        Збірник розповідей про світ майбутнього "Тридцятий рік після падіння метеориту".
+                        Цей збірник містить історії про людей з різних прошарків суспільства, які розповідають про свій досвід життя в постапокаліптичному світі.
+                        Історії написані з різних перспектив та в різних стилях, щоб задовольнити смаки кожного читача.
+                    </p>
+                    <a class="src" href="pages/book-page.html">Дізнатись більше</a>
+                    <a class="btn" href="../materials/Book.pdf" download>Завантажити</a>
+                </div>
+                <div>
+                    <img src="img/book.png">
+                </div>
+            </div>
+            <!-- Оновлення -->
+            <div class="prsentatin-item">
+                <div id="update">
+                    <h2>Оновлення</h2>
+                    <p>
+                        <span>На сторінці Оновлення ви дізнаєтесь скільки лишилось часу до оновлення в яке будуть входити такі кроки:</span><br>
+                        - <span>Оновлення сайту.</span> Сайт буде переписаний на React + Bootstrap <br>
+                        - <span>Ремастер альбомів.</span> Буде зроблена спроба покращити звучання обох альбомів <br>
+                        - <span>Оновлення гри.</span> Гру буде дороблено та портовано на всі можливі платформи <br>
+                        - <span>Редакція коміксу.</span> Комікс буде пофарбований та підготовлений до друку <br>
+                        - <span>Редакція книги.</span> Книга буде відредагована та підготовлене до друку
+                    </p>
+                    <a class="src" href="pages/update-page.html">Дізнатись скільки лишилось часу</a>
+                </div>
+            </div>
+        </main>
+        <!-- Футер для всіх сторінок -->
+        <footer>
+            <hr>
+            <div class="footer">
+                <div>
+                    <h1>Project Close Geshtalt</h1>
+                    <img src="img/icon.png">
+                </div>
+                <p>Дякую, що відвідали мій сайт!</p>
+            </div>
+        </footer>
+        <!-- Кнопка для скролу у верх -->
+        <a href="#" class="to-top">
+            <span>Up</span>
+        </a>
+        <script src="scripts/main.js"></script>
+    </div>
+</body>
+</html>
