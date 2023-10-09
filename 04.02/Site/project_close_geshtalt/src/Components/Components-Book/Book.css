@@ -1,0 +1,18 @@
+.reader-book{
+    align-items: center;
+    height: 100vh;
+    margin: 24px auto;
+}
+
+.book{
+    width: 80%;
+    height: 100vh;
+}
+
+.nav-link.active {
+    color: #171717 !important;
+}
+  
+.nav-link {
+    color: #EDEDED !important;
+}

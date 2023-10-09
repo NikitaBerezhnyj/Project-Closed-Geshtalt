@@ -1,0 +1,104 @@
+{
+    "header": {
+        "main": "Main",
+        "music": "Music",
+        "game": "Game",
+        "comics": "Comics",
+        "book": "Book"
+    },
+
+    "about": {
+        "hero-h1": "Hi, I'm Nikita",
+        "hero-h3": "You are on the page of my project in which I close all my creative gestalts",
+        "hero-paragraph": "Ever since I was a kid, I've been trying different things, from programming to writing short stories to music, but I almost never finished any of them, so I've developed a kind of gestalt associated with each area I've tried, so by the time I'm supposed to graduate, i.e. summer 2023, I decided to create one finished project from each area to show myself, and you, what I've learned during this time. On this page, you will be able to read all the projects and download their digital versions.",
+        "hero-span": "So I present it to you:",
+        "hero-span-presentation-1": "1) Music albums (Music)",
+        "hero-span-presentation-2": "2) Visual novel (Programming)",
+        "hero-span-presentation-3": "3) Comics (Drawing)",
+        "hero-span-presentation-4": "4) Book (Writing)",
+        "hero-alt-text": "It's me",
+        
+        "music-h3": "Music",
+        "music-about": "On the Music page, you can listen to two albums:",
+        "music-span-1": "A poet with no name",
+        "music-paragraph-1": "- is an album I worked on during a difficult period in my life. I felt a strong loss of strength and a drop in motivation, but the desire to finish at least something helped me. This album was created on the basis of real events in my life that greatly influenced my worldview.",
+        "music-span-2": "Survivor's Mistake",
+        "music-paragraph-2": " - is an album that I created to express my thoughts and emotions that I felt during the year. It was the most important period in my life, and I don't know how I would have coped without music. This year changed me a lot. I became stronger, but also more vulnerable. I have learned to appreciate every moment of life, and I am no longer afraid to express my thoughts in my own language.",
+        "music-paragraph-3": "I put my whole soul into these albums and I think they deserve attention. I hope that you will listen to them and find something for yourself.",
+        "music-alt-text": "Albums",
+
+        "learn-more": "Learn more",
+        "download": "Download",
+
+        "game-h3": "Game (Visual novel)",
+        "game-about": "On the Game page, you can:",
+        "game-paragraph-1": "Get acquainted with the visual novel called",
+        "game-span": "\"The last rest\"",
+        "game-paragraph-2": ". This short story will tell you about an ordinary resident of the city of Kifi named Alexei. Find out how Alexei's ordinary life is destroyed when a meteorite falls on the city. People who inhale the gas from the meteorite turn into humanoids. Make decisions that will affect whether Alexei can survive.",
+        "game-alt-text": "Visual novel icon",
+
+        "comics-h3": "Comics",
+        "comics-about": "On the Comics page, you can:",
+        "comics-paragraph-1": "Read and download the comic book",
+        "comics-span": "\"The letter of death. The last sentence\"",
+        "comics-paragraph-2": ". This comic tells the story of Viktor, who is fighting for the survival of his hometown. The city is mired in corruption, but its inhabitants still want to live and develop. Can Victor save his city from itself?",
+        "comics-alt-text": "Comics cover",
+
+        "book-h3": "Book",
+        "book-about": "On the Book page, you can:",
+        "book-paragraph-1": "A collection of stories about the world of the future",
+        "book-span": "\"The thirtieth year after the meteorite hit\"",
+        "book-paragraph-2": ". This collection contains stories about people from different walks of life who talk about their experiences in a post-apocalyptic world. The stories are written from different perspectives and in different styles to satisfy the tastes of each reader.",
+        "book-alt-text": "Book cover"
+    },
+
+    "music": {
+        "music-h1": "Music",
+        "music-paragraph": "I have been planning to write my first music album for many years. For me, a music album is not just a collection of 10 +/- tracks. It's something meaningful, it's a story. That's why I decided to write a concept album. The first album is called \"The Poet with No Name\". It is written in Russian and tells about a certain stage of my life, which is embellished with some circumstances and images, but the events were real. I started writing my second album before I even finished the first one. In 2022, Russia invaded Ukraine. I realized that I couldn't write songs in Russian, so I decided to collect all my experiences and all my emotions from the year and put them into an album called \"Survivor's Mistake\". I made the entire album myself from start to finish. I wrote the beats, lyrics and mixed the tracks myself. I hope you will enjoy what I have done.",
+        "music-span": "Enjoy your listening!",
+
+        "album-1-h3": "A poet with no name",
+        "album-1-paragraph": "The album \"A poet with no name\" was a special project for me. It was the result of a difficult period in my life, when I felt a strong loss of strength and a drop in motivation and inspiration. I was a completely different person back then, I even wrote it in Russian, so in a way, this album is a cast of my past self. I created it at a time when I was constantly thinking about stopping my music career, but the desire to finish at least something helped me. This album was created based on real events in my life that greatly influenced my worldview. It didn't turn out the way I originally planned it, but I'm still proud of it. I put my whole soul into it, and I think it deserves attention.",
+        "album-1-span": "So I hope that you will listen to it and find something for yourself.",
+        "album-1-alt": "The cover of the \"A poet with no name\"album.",
+
+        "album-2-h3": "Survivor's Mistake",
+        "album-2-paragraph": "The album \"Survivor's Mistake\" became a place for me to express my thoughts and emotions that I felt during the year. It was the most important period in my life, and I don't know how I would have coped without music. This year has changed me a lot. I'm not the same person I was before. I've become stronger, but also more vulnerable. I've learned to appreciate every moment of life, and I'm no longer afraid to express myself in my own language. That's why I wanted this album to be not just a collection of songs, but a complete story of my inner struggle. I wanted it to be a reminder that we all go through difficult times, and that we can continue to create and live even when everything seems lost.",
+        "album-2-span": "I hope that you will enjoy the album, so I wish you a pleasant listening experience.",
+        "album-2-alt": "The cover of the album \"Survivor's Mistake\""
+    },
+
+    "game": {
+        "game-h1": "The last rest",
+        "game-paragraph-1": "Immerse yourself in a post-apocalyptic world where humans are turning into dangerous humanoids. In this visual novel, you play as Alexei, a private soldier trying to survive in this new, cruel world. You will encounter dangerous humanoids, as well as other people who can be just as dangerous. You will need to use all your skills and abilities to survive and find your way in this new world. Here are some of the key features of the visual novel:",
+        "game-paragraph-2": "- A post-apocalyptic world where people turn into dangerous humanoids.",
+        "game-paragraph-3": "- An unpredictable plot that will keep you in suspense until the very end.",
+        "game-paragraph-4": "If you like post-apocalypse, adventure, and choice, you'll definitely enjoy this visual novel.",
+        "game-span": "I hope you enjoy this version of the story, so enjoy the game!",
+        "game-pre-btn": "You can download the game by clicking on this button",
+        "game-btn": "Download the game"
+    },
+
+    "comics": {
+        "comics-tab-1": "About the comic",
+        "comics-tab-2": "Read",
+
+        "comics-h1": "The letter of death. The last sentence",
+        "comics-paragraph": "The comic book \"The letter of death. The last sentence\" tells the story of Viktor, one of the beta testers of the latest Ego gadget. Viktor is an ordinary man who dreams of a better future for his city. But one day, the gadget malfunctions and the only question that remains in his mind is: \"If I kill all the corrupt officials in the city, will life become easier, or will I have to destroy the entire city?\"",
+
+        "comics-left-btn": "<-",
+        "comics-right-btn": "->"
+    },
+
+    "book": {
+        "book-tab-1": "About the book",
+        "book-tab-2": "Read",
+
+        "book-h1": "The thirtieth year after the meteorite hit",
+        "book-paragraph": "The collection of short stories \"The thirtieth year after the meteorite hit\" will tell you the stories of the inhabitants of the last city on earth, which has changed beyond recognition after the meteorite hit. Whether you want to live in this world is up to you, but it would be good to learn more about it first. The collection of stories \"Thirty Years After the Meteorite\" will tell you about the lives of people in a post-apocalyptic world that has changed beyond recognition after the fall of a large meteorite. You will learn the life stories of different people from different walks of life, in which you will be able to see a mold of the way of life in the new world. Would you want to live in this world? This is a question you have to answer for yourself. But to do so, you will have to dive into this book and learn more about it."
+    },
+
+    "footer":{
+        "footer-text": "Thank you for your attention!"
+    }
+}
