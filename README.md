@@ -1,6 +1,5 @@
-<a href="https://poroject-close-geshtalt.netlify.app/" target="_blank">Project-Closed-Geshtalt</a> - це проект в якому я зроблю по одному проекту в галузях, які я намагався вивчати в шкільні роки. Таким чином я можна сказати закрию гештальт і дізнаюся чому я навчився за весь цей час. Отже в цьому репозиторії будуть такі гілки, як:
-- Музика (music)
-- Розробка ігор (visual novel)
-- Малювання коміксів (comics)
-- Написання книг (book)
-- Розробка сайтів (site)
+Project Close Geshtalt has Ukrainian and English localizations. Here is a link to the README.md file in the language you understand:
+
+[UA :ukraine:](README.ua.md)
+
+[EN :uk:](README.en.md)
