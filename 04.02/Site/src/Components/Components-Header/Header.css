@@ -1,0 +1,46 @@
+.navbar-brand span{
+    color: #EDEDED;
+}
+
+.navbar-brand img{
+    margin-left: 10px;
+    width: 7%;
+}
+
+.nav-btn{
+    margin-right: auto;
+}
+
+.nav-item{
+    color: #cecece;
+}
+
+.nav-item:hover{
+    color: #EDEDED;
+}
+
+.change-lang-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.changer-lang-btn{
+    color: #8d8d8d;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+.changer-lang-btn-active{
+    color: #EDEDED;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+@media (max-width: 720px){
+    .nav-brand-fix{
+        width: 75%;
+    }
+}

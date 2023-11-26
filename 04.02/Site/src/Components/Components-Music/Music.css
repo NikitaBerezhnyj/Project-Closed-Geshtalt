@@ -1,0 +1,37 @@
+.music-hero{
+    text-align: left;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 96px;
+    margin-bottom: 96px;
+}
+
+.main-audio-content{
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 96px;
+    margin-bottom: 96px;
+}
+
+.main-audio-content h3{
+    text-align: center;
+    color: #DA0037;
+    font-size: 2em;
+    line-height: 1.5em;
+    margin-bottom: 24px; 
+}
+
+.main-audio-content img{
+    margin: 36px 0;
+}
+
+.audio-content img{
+    width: 100%;
+}
+
+.album-items div{
+    width: 90%;
+}
+.album-items audio{
+    width: 100%;
+}

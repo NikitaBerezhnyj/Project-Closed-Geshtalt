@@ -1,0 +1,82 @@
+h1{
+    color: #DA0037;
+    font-size: 3.5em;
+    line-height: 1.5em;
+}
+h3{
+    font-size: 1.5em;
+    line-height: 1em;
+}
+p{
+    color: #FFFFFF;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+span{
+    color: #DA0037;
+}
+.span-bold{
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.btn{
+    width: 50%;
+    color: #EDEDED;
+    background-color: #DA0037;
+    padding: 12px;
+    border-radius: 5%;
+    text-decoration: none;
+    display: inline-block;
+    transition: .5s;
+    margin-top: 24px;
+}
+.btn:hover{
+    width: 55%;
+    font-size: 1.3em;
+    color: #EDEDED;
+    background-color: #DA0037;
+    padding: 12px;
+    border-radius: 5%;
+    text-decoration: none;
+    transition: .5s;
+    margin-top: 24px;
+}
+
+.fluid-fix{
+    padding: 0 96px;
+}
+
+.mar-auto{
+    margin: 0 auto;
+}
+.mar-24{
+    margin-bottom: 24px;
+}
+.mar-48{
+    margin-bottom: 48px;
+}
+.mar-72{
+    margin-bottom: 72px;
+}
+.mar-96{
+    margin-bottom: 96px;
+}
+
+@media (max-width: 960px) {
+    .fluid-fix{
+        padding: 0 72px;
+    }
+}
+
+@media (max-width: 540px) {
+    .fluid-fix{
+        padding: 0 48px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fluid-fix{
+        padding: 0 24px;
+    }
+}
