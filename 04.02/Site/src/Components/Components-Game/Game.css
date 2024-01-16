@@ -2,6 +2,40 @@
     width: 100%;
 }
 
+.game-hero{
+    text-align: left;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 96px;
+    margin-bottom: 96px;
+}
+
+.main-game-content{
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 96px;
+    margin-bottom: 96px;
+}
+
+.main-game-content h3{
+    text-align: center;
+    color: #DA0037;
+    font-size: 2em;
+    line-height: 1.5em;
+    margin-bottom: 24px; 
+}
+
+.game-img-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-content img{
+    width: 50%;
+}
+
 .container-game{
     text-align: left;
 }

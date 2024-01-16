@@ -2,9 +2,9 @@
     "header": {
         "main": "Main",
         "music": "Music",
-        "game": "Game",
+        "game": "Games",
         "comics": "Comics",
-        "book": "Book"
+        "book": "Books"
     },
 
     "about": {
@@ -20,9 +20,9 @@
         
         "music-h3": "Music",
         "music-about": "On the Music page, you can listen to two albums:",
-        "music-span-1": "A poet with no name",
+        "music-span-1": "\"A poet with no name\" ",
         "music-paragraph-1": "- is an album I worked on during a difficult period in my life. I felt a strong loss of strength and a drop in motivation, but the desire to finish at least something helped me. This album was created on the basis of real events in my life that greatly influenced my worldview.",
-        "music-span-2": "Survivor's Mistake",
+        "music-span-2": "\"Survivor's Mistake\" ",
         "music-paragraph-2": " - is an album that I created to express my thoughts and emotions that I felt during the year. It was the most important period in my life, and I don't know how I would have coped without music. This year changed me a lot. I became stronger, but also more vulnerable. I have learned to appreciate every moment of life, and I am no longer afraid to express my thoughts in my own language.",
         "music-paragraph-3": "I put my whole soul into these albums and I think they deserve attention. I hope that you will listen to them and find something for yourself.",
         "music-alt-text": "Albums",
@@ -30,26 +30,35 @@
         "learn-more": "Learn more",
         "download": "Download",
 
-        "game-h3": "Game (Visual novel)",
+        "game-h3": "Games",
         "game-about": "On the Game page, you can:",
         "game-paragraph-1": "Get acquainted with the visual novel called",
         "game-span": "\"The last rest\"",
         "game-paragraph-2": ". This short story will tell you about an ordinary resident of the city of Kifi named Alexei. Find out how Alexei's ordinary life is destroyed when a meteorite falls on the city. People who inhale the gas from the meteorite turn into humanoids. Make decisions that will affect whether Alexei can survive.",
-        "game-alt-text": "Visual novel icon",
+        "game-2-paragraph-1": "Get acquainted with the roguelike game called",
+        "game-2-span": "\"Under home\"",
+        "game-2-paragraph-2": ". This game will show you a story of struggle with the past. The main character wakes up in a dungeon that reminds him very much of his old home, where he lived with his parents as a child. Will he be able to overcome himself and his memories that he will find on his way to return home.",
+        "game-alt-text": "Games icon",
 
         "comics-h3": "Comics",
-        "comics-about": "On the Comics page, you can:",
-        "comics-paragraph-1": "Read and download the comic book",
-        "comics-span": "\"The letter of death. The last sentence\"",
-        "comics-paragraph-2": ". This comic tells the story of Viktor, who is fighting for the survival of his hometown. The city is mired in corruption, but its inhabitants still want to live and develop. Can Victor save his city from itself?",
-        "comics-alt-text": "Comics cover",
+        "comics-about": "On the Comics page you can:",
+        "comics-paragraph-1": "Browse and download the comic.",
+        "comics-span": "\"The Letter of Death. The Last Sentence\"",
+        "comics-paragraph-2": ". This comic tells the story of Viktor, who is fighting for the survival of his hometown. The city is mired in corruption, but its inhabitants still want to live and develop. Will Victor be able to save his city from itself?",
+        "comics-2-paragraph-1": "Read and download the comic.",
+        "comics-2-span": "\"Through the Gas to the Doorstep\"",
+        "comics-2-paragraph-2": ". This comic will tell you the story of two friends who were forced to leave their hometown when a meteorite fell on Kifa, but a few years later the city was liberated and they decided to return, so will they succeed?",
+        "comics-alt-text": "Comic book covers",
 
-        "book-h3": "Book",
-        "book-about": "On the Book page, you can:",
-        "book-paragraph-1": "A collection of stories about the world of the future",
-        "book-span": "\"The thirtieth year after the meteorite hit\"",
-        "book-paragraph-2": ". This collection contains stories about people from different walks of life who talk about their experiences in a post-apocalyptic world. The stories are written from different perspectives and in different styles to satisfy the tastes of each reader.",
-        "book-alt-text": "Book cover"
+        "book-h3": "Books",
+        "book-about": "On the Books page you can:",
+        "book-paragraph-1": "Read and download a collection of stories about the world of the future.",
+        "book-span": "\"The Thirtieth Year After the Meteorite Strike\"",
+        "book-paragraph-2": ". This collection contains stories about people from different walks of life who talk about their experiences in a post-apocalyptic world. The stories are written from different perspectives and in different styles to satisfy the tastes of every reader.",
+        "book-2-paragraph-1": "Read and download a sci-fi story.",
+        "book-2-span": "\"Intermediate to Advanced\"",
+        "book-2-paragraph-2": ". This story will tell you about a generation of people who were born and raised on the spaceship Argo, which was built for intergalactic expansion. When the ship is about to leave the Milky Way, the crew of the ship is faced with the question of whether they should really fly even further from Earth, but at the moment of voting, something interrupts them.",
+        "book-alt-text": "book-covers"
     },
 
     "music": {

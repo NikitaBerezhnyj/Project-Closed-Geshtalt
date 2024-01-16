@@ -1,4 +1,12 @@
+.navbar-brand{
+    width: 75%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
 .navbar-brand span{
+    left: 0;
     color: #EDEDED;
 }
 

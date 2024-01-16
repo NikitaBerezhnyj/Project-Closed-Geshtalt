@@ -1,7 +1,7 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../Standart-Component-style.css';
+import '../Standard-Component-style.css';
 import './Music.css';
 
 export default function Music_Component(){

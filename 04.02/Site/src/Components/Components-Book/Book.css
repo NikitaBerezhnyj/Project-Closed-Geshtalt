@@ -1,18 +1,72 @@
-.reader-book{
+/* About Component */
+.book-screen{
+    width: 100%;
+}
+
+.book-hero{
+    text-align: left;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 96px;
+    margin-bottom: 96px;
+}
+
+.main-book-content{
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 96px;
+    margin-bottom: 96px;
+}
+
+.main-book-content h3{
+    text-align: center;
+    color: #DA0037;
+    font-size: 2em;
+    line-height: 1.5em;
+    margin-bottom: 24px; 
+}
+
+.book-img-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 24px auto;
 }
 
-.book{
-    width: 80%;
-    height: 100vh;
+.book-content img{
+    width: 50%;
 }
 
+.container-book{
+    text-align: left;
+}
+
+/* Tabs style */
 .nav-link.active {
-    color: #171717 !important;
-}
+    color: #000000 !important;
+  }
   
-.nav-link {
-    color: #EDEDED !important;
+  .nav-link {
+    color: white !important;
+  }
+
+/* comics Reader Component */
+.about img{
+    width: 50%;
+    margin: auto;
+}
+
+/* comics Reader Component */
+.reader-book {
+    width: 50%;
+    height: 100vh;
+    margin: auto;
+    margin-bottom: 96px;
+    position: relative;
+}
+
+.reader-book embed {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
