@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://cuyivmu5iixlx"]
+
+[ext_resource type="Script" path="res://Scripts/save_point.gd" id="1_5k7fd"]
+[ext_resource type="Texture2D" uid="uid://cqx0pxxwec2rw" path="res://Graphics/Custom_Matrials/save_point/save_point_top.png" id="2_2p6b0"]
+[ext_resource type="Texture2D" uid="uid://b5jux8tx72exi" path="res://Graphics/Custom_Matrials/save_point/save_point_down.png" id="3_53r80"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ntuna"]
+size = Vector2(36, 20)
+
+[node name="Save_Point" type="Area2D" groups=["save_point"]]
+script = ExtResource("1_5k7fd")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("2_2p6b0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("3_53r80")
+
+[node name="CollisionShape" type="CollisionShape2D" parent="."]
+position = Vector2(1, 6)
+shape = SubResource("RectangleShape2D_ntuna")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

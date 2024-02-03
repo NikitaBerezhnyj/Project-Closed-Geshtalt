@@ -9,102 +9,183 @@
 
     "about": {
         "hero-h1": "Hi, I'm Nikita",
-        "hero-h3": "You are on the page of my project in which I close all my creative gestalts",
-        "hero-paragraph": "Ever since I was a kid, I've been trying different things, from programming to writing short stories to music, but I almost never finished any of them, so I've developed a kind of gestalt associated with each area I've tried, so by the time I'm supposed to graduate, i.e. summer 2023, I decided to create one finished project from each area to show myself, and you, what I've learned during this time. On this page, you will be able to read all the projects and download their digital versions.",
-        "hero-span": "So I present it to you:",
+        "hero-h3": "You are on the page of my project in which I close all my creative gestalts.",
+        "hero-paragraph": "Ever since I was a kid, I've been trying different things, from programming to writing short stories to music, but I almost never finished any project, so I've developed a gestalt associated with each area I tried something in, so by the time I was supposed to graduate, i.e. summer 2023, I decided to create one finished project from each area to show myself, and also you, what I've learned during this time. On this page you will be able to see all the projects and download their digital versions.",
+        "hero-span": "So I present to you:",
         "hero-span-presentation-1": "1) Music albums (Music)",
-        "hero-span-presentation-2": "2) Visual novel (Programming)",
+        "hero-span-presentation-2": "2) Games (Programming)",
         "hero-span-presentation-3": "3) Comics (Drawing)",
-        "hero-span-presentation-4": "4) Book (Writing)",
-        "hero-alt-text": "It's me",
-        
-        "music-h3": "Music",
-        "music-about": "On the Music page, you can listen to two albums:",
-        "music-span-1": "\"A poet with no name\" ",
-        "music-paragraph-1": "- is an album I worked on during a difficult period in my life. I felt a strong loss of strength and a drop in motivation, but the desire to finish at least something helped me. This album was created on the basis of real events in my life that greatly influenced my worldview.",
-        "music-span-2": "\"Survivor's Mistake\" ",
-        "music-paragraph-2": " - is an album that I created to express my thoughts and emotions that I felt during the year. It was the most important period in my life, and I don't know how I would have coped without music. This year changed me a lot. I became stronger, but also more vulnerable. I have learned to appreciate every moment of life, and I am no longer afraid to express my thoughts in my own language.",
-        "music-paragraph-3": "I put my whole soul into these albums and I think they deserve attention. I hope that you will listen to them and find something for yourself.",
-        "music-alt-text": "Albums",
+        "hero-span-presentation-4": "4) Books (Writing)",
+        "hero-alt-text": "This is me",
 
         "learn-more": "Learn more",
         "download": "Download",
+        
+        "music-h3": "Music",
+        "music-about": "On the Music page, you can listen to two albums:",
+        "music-span-1": "Poet with No Name",
+        "music-paragraph-1": " is an album I worked on during a difficult period of my life. I felt a strong loss of strength and a drop in motivation, but the desire to finish at least something helped me. This album was created on the basis of real events in my life that greatly influenced my worldview.",
+        "music-span-2": "Survivor's Mistake",
+        "music-paragraph-2": " is an album that I created to express my thoughts and emotions that I felt during the year. It was the most important period in my life, and I don't know how I would have coped without music. This year changed me a lot. I became stronger, but also more vulnerable. I have learned to appreciate every moment of life, and I am no longer afraid to express my thoughts in my own language.",
+        "music-paragraph-3": "I put my whole soul into these albums, and I believe they deserve attention. I hope that you will listen to them and find something for yourself.",
+        "music-alt-text": "Albums",
 
         "game-h3": "Games",
-        "game-about": "On the Game page, you can:",
-        "game-paragraph-1": "Get acquainted with the visual novel called",
-        "game-span": "\"The last rest\"",
-        "game-paragraph-2": ". This short story will tell you about an ordinary resident of the city of Kifi named Alexei. Find out how Alexei's ordinary life is destroyed when a meteorite falls on the city. People who inhale the gas from the meteorite turn into humanoids. Make decisions that will affect whether Alexei can survive.",
+        "game-about": "On the Games page you can:",
+        "game-paragraph-1": "Get acquainted with a visual novel called.",
+        "game-span": "The last rest",
+        "game-paragraph-2": ". This short story will tell you about an ordinary resident of the city of Kifi named Alexey. Learn how Alexey's ordinary life is destroyed when a meteorite falls on the city. People who inhale the gas from the meteorite turn into humanoids. Make decisions that will affect whether Alexey can survive.",
         "game-2-paragraph-1": "Get acquainted with the roguelike game called",
-        "game-2-span": "\"Under home\"",
-        "game-2-paragraph-2": ". This game will show you a story of struggle with the past. The main character wakes up in a dungeon that reminds him very much of his old home, where he lived with his parents as a child. Will he be able to overcome himself and his memories that he will find on his way to return home.",
-        "game-alt-text": "Games icon",
+        "game-2-span": "Under Home",
+        "game-2-paragraph-2": ". This game will show you a story of struggle with the past. The protagonist wakes up in a dungeon that reminds him very much of his old home, where he lived with his parents as a child. Will he be able to overcome himself and the memories he will find on his way to return home.",
+        "game-alt-text": "Games Icons",
 
         "comics-h3": "Comics",
         "comics-about": "On the Comics page you can:",
         "comics-paragraph-1": "Browse and download the comic.",
-        "comics-span": "\"The Letter of Death. The Last Sentence\"",
+        "comics-span": "The letter of death. The last sentence",
         "comics-paragraph-2": ". This comic tells the story of Viktor, who is fighting for the survival of his hometown. The city is mired in corruption, but its inhabitants still want to live and develop. Will Victor be able to save his city from itself?",
         "comics-2-paragraph-1": "Read and download the comic.",
-        "comics-2-span": "\"Through the Gas to the Doorstep\"",
+        "comics-2-span": "Way home",
         "comics-2-paragraph-2": ". This comic will tell you the story of two friends who were forced to leave their hometown when a meteorite fell on Kifa, but a few years later the city was liberated and they decided to return, so will they succeed?",
         "comics-alt-text": "Comic book covers",
 
         "book-h3": "Books",
         "book-about": "On the Books page you can:",
         "book-paragraph-1": "Read and download a collection of stories about the world of the future.",
-        "book-span": "\"The Thirtieth Year After the Meteorite Strike\"",
+        "book-span": "Thirtieth year after our era",
         "book-paragraph-2": ". This collection contains stories about people from different walks of life who talk about their experiences in a post-apocalyptic world. The stories are written from different perspectives and in different styles to satisfy the tastes of every reader.",
         "book-2-paragraph-1": "Read and download a sci-fi story.",
-        "book-2-span": "\"Intermediate to Advanced\"",
+        "book-2-span": "Intermediate generation",
         "book-2-paragraph-2": ". This story will tell you about a generation of people who were born and raised on the spaceship Argo, which was built for intergalactic expansion. When the ship is about to leave the Milky Way, the crew of the ship is faced with the question of whether they should really fly even further from Earth, but at the moment of voting, something interrupts them.",
         "book-alt-text": "book-covers"
     },
 
     "music": {
         "music-h1": "Music",
-        "music-paragraph": "I have been planning to write my first music album for many years. For me, a music album is not just a collection of 10 +/- tracks. It's something meaningful, it's a story. That's why I decided to write a concept album. The first album is called \"The Poet with No Name\". It is written in Russian and tells about a certain stage of my life, which is embellished with some circumstances and images, but the events were real. I started writing my second album before I even finished the first one. In 2022, Russia invaded Ukraine. I realized that I couldn't write songs in Russian, so I decided to collect all my experiences and all my emotions from the year and put them into an album called \"Survivor's Mistake\". I made the entire album myself from start to finish. I wrote the beats, lyrics and mixed the tracks myself. I hope you will enjoy what I have done.",
-        "music-span": "Enjoy your listening!",
-
-        "album-1-h3": "A poet with no name",
-        "album-1-paragraph": "The album \"A poet with no name\" was a special project for me. It was the result of a difficult period in my life, when I felt a strong loss of strength and a drop in motivation and inspiration. I was a completely different person back then, I even wrote it in Russian, so in a way, this album is a cast of my past self. I created it at a time when I was constantly thinking about stopping my music career, but the desire to finish at least something helped me. This album was created based on real events in my life that greatly influenced my worldview. It didn't turn out the way I originally planned it, but I'm still proud of it. I put my whole soul into it, and I think it deserves attention.",
-        "album-1-span": "So I hope that you will listen to it and find something for yourself.",
-        "album-1-alt": "The cover of the \"A poet with no name\"album.",
-
+        "music-paragraph": "I have been planning to write my first music album for many years. For me, a music album is not just a collection of 10 +/- tracks. It's something meaningful, it's a story. That's why I decided to write a concept album. The first album is called \"The Poet with No Name\". It is written in Russian and tells about a certain stage of my life, which is embellished with some circumstances and images, but the events were real. I started writing my second album before I even finished the first one. In 2022, Russia invaded Ukraine. I realized that I couldn't write songs in Russian, so I decided to collect all my experiences and all my emotions from the year and put them into an album called Survivor's Mistake. I made the entire album myself from start to finish. I wrote the beats, lyrics and mixed the tracks myself. I hope you'll enjoy what I've done.",
+        "music-span": "Enjoy!",
+        "album-1-h3": "The Poet with No Name",
+        "album-1-paragraph": "The album \"Poet with No Name\" was a special project for me. It was the result of a difficult period in my life, when I felt a strong loss of strength and a drop in motivation and inspiration. I was a completely different person back then, I even wrote it in Russian, so in a way, this album is a cast of my past self. I created it at a time when I was constantly thinking about stopping my music career, but the desire to finish at least something helped me. This album was created based on real events in my life that greatly influenced my worldview. It didn't turn out the way I originally planned it, but I'm still proud of it. I put my whole soul into it, and I think it deserves attention.",
+        "album-1-span": "So I hope you do listen to it and find something in it for yourself.",
+        "album-1-alt": "Album cover of \"Poet with No Name\".",
         "album-2-h3": "Survivor's Mistake",
-        "album-2-paragraph": "The album \"Survivor's Mistake\" became a place for me to express my thoughts and emotions that I felt during the year. It was the most important period in my life, and I don't know how I would have coped without music. This year has changed me a lot. I'm not the same person I was before. I've become stronger, but also more vulnerable. I've learned to appreciate every moment of life, and I'm no longer afraid to express myself in my own language. That's why I wanted this album to be not just a collection of songs, but a complete story of my inner struggle. I wanted it to be a reminder that we all go through difficult times, and that we can continue to create and live even when everything seems lost.",
-        "album-2-span": "I hope that you will enjoy the album, so I wish you a pleasant listening experience.",
-        "album-2-alt": "The cover of the album \"Survivor's Mistake\""
+        "album-2-paragraph": "The album \"Survivor's Mistake\" became a place for me to express my thoughts and emotions that I felt during the year. It was the most important period in my life, and I don't know how I would have coped without music. This year has changed me a lot. I'm not the same person I was before. I've become stronger, but also more vulnerable. I've learned to appreciate every moment of life, and I'm no longer afraid to express myself in my own language. That's why I wanted this album to be not just a collection of songs, but a complete story of my inner struggle. I wanted it to be a reminder that we all go through difficult times, and that we can continue to create and live even when all seems lost.",
+        "album-2-span": "I hope you enjoy the album, so I wish you a pleasant listening experience.",
+        "album-2-alt": "Album cover of \"Survivor's Mistake\""
     },
 
     "game": {
-        "game-h1": "The last rest",
-        "game-paragraph-1": "Immerse yourself in a post-apocalyptic world where humans are turning into dangerous humanoids. In this visual novel, you play as Alexei, a private soldier trying to survive in this new, cruel world. You will encounter dangerous humanoids, as well as other people who can be just as dangerous. You will need to use all your skills and abilities to survive and find your way in this new world. Here are some of the key features of the visual novel:",
-        "game-paragraph-2": "- A post-apocalyptic world where people turn into dangerous humanoids.",
-        "game-paragraph-3": "- An unpredictable plot that will keep you in suspense until the very end.",
-        "game-paragraph-4": "If you like post-apocalypse, adventure, and choice, you'll definitely enjoy this visual novel.",
-        "game-span": "I hope you enjoy this version of the story, so enjoy the game!",
-        "game-pre-btn": "You can download the game by clicking on this button",
-        "game-btn": "Download the game"
+        "game-h1": "Games",
+        "game-paragraph": "I have always loved video games. Ever since I was a kid, I spent hours at the computer, immersed in fascinating virtual worlds. When I grew up, my love for games did not disappear. I started dreaming about creating my own games that could transport players to their own atmospheric worlds. So as part of this project, I created two completely different games. The first is a visual novel in the post-apocalyptic genre, where you will need to make decisions that will affect your path. And the second one is a roguelike game where you have to fight childhood fears and try to understand your parents.",
+        "game-span": "I really hope that you will enjoy my work, so I wish you interesting adventures.",
+
+        "game-1-about-h3": "The Last Rest",
+        "game-1-about-alt": "Visual novel icon for \"The Last Rest\".",
+        "game-1-about-paragraph": "Immerse yourself in a post-apocalyptic world where people are turning into dangerous humanoids. In this visual novel, you play as Alexei, an ordinary resident of the city of Kifi, who is trying to survive in this new, cruel world. You will encounter dangerous humanoids, as well as other people who can be just as dangerous.",
+
+        "game-2-about-h3": "Under Home",
+        "game-2-about-alt": "Under Home game icon",
+        "game-2-about-paragraph": "You return to the house where you grew up to find answers to questions about your past. But the dungeons hiding under the house are more dangerous than you could have imagined. You have to fight your childhood fears to find your way to the top. But the more you learn about your family, the more you start to question what you really want to find.",
+
+        "game-1-h1": "The Last Rest",
+        "game-1-paragraph-1": "The quiet life of the ordinary town of Kifi was suddenly turned upside down when a mysterious meteorite hit it. The green fog released from the meteorite began to transform the inhabitants into terrifying mutants and bloodthirsty monsters. In this epicenter of chaos, an ordinary boy named Alexey finds himself. He will have to show all his intelligence and ingenuity to survive this nightmare and get to the government rescue helicopter called the \"Rescue Ark\". Along the way, Oleksiy will meet both allies and enemies. He will have to make difficult decisions: whom to trust and whom to avoid. Now every mistake can cost him his life. Will an ordinary boy be able to survive this nightmare and get to salvation? Will he remain human despite all the horrors around him? His future will depend on your decisions.",
+        "game-1-paragraph-2": "Genre: Visual Novel",
+        "game-1-paragraph-3": "Release year: 2024",
+        "game-1-paragraph-4": "Author: Nikita Berezhnyj.",
+        "game-1-paragraph-5": "The game can be downloaded by clicking on the button.",
+
+        "game-2-h1": "Under Home",
+        "game-2-paragraph-1": "After the tragic death of your parents, you return to your childhood home to face the memories of the past. It's not a simple journey through time, because the walls of the house remember everything. Wandering around the rooms, you suddenly discover a mysterious pantry that was hidden before. And you step into the unknown - the pantry leads you to an underground labyrinth. Here, in the depths, you will find forgotten childhood fears and anxieties of the past. To find the way out, you will have to come face to face with the inner demons you once avoided. Each battle is an opportunity to understand yourself and your parents better. In the end, it will depend on you whether you can come to terms with the past and move on, or whether you will remain in the grip of memories forever.",
+        "game-2-paragraph-2": "Genre: RogueLike",
+        "game-2-paragraph-3": "Release year: 2024",
+        "game-2-paragraph-4": "Author: Nikita Berezhnyj.",
+        "game-2-paragraph-5": "The game can be downloaded by clicking on the button"
     },
 
     "comics": {
-        "comics-tab-1": "About the comic",
+        "comics-h1": "Comics",
+        "comics-paragraph": "For as long as I can remember, I have always dreamed of creating my own comics. They've always been a great way for me to immerse myself in fascinating stories and travel to other worlds. Since childhood, I have been reading adventure comics, dreaming of becoming a superhero myself. Over time, my taste changed a bit, but my love for comics remained. So I kept coming up with some concepts and plots for comics, but I almost never finished them, so when I created this project, I couldn't help but try on the role of a comic book writer and create two different stories. The first is a thriller called The Letter of Death. The Last Sentence, where the protagonist inadvertently becomes a serial killer. The second one is an adventure story called The Road Home about childhood friends who make their way through dangerous places. I really hope that these comics will be able to transport you to the atmospheric worlds created by my imagination.",
+        "comics-span": "I wish you interesting reading and unforgettable adventures!",
+
+        "comics-tab-1": "About",
         "comics-tab-2": "Read",
 
-        "comics-h1": "The letter of death. The last sentence",
-        "comics-paragraph": "The comic book \"The letter of death. The last sentence\" tells the story of Viktor, one of the beta testers of the latest Ego gadget. Viktor is an ordinary man who dreams of a better future for his city. But one day, the gadget malfunctions and the only question that remains in his mind is: \"If I kill all the corrupt officials in the city, will life become easier, or will I have to destroy the entire city?\"",
+        "comics-1-about-h3": "The letter of death. The last sentence",
+        "comics-1-about-alt": "Cover of the comic book \"The letter of death. The last sentence\"",
+        "comics-1-about-paragraph": "Imagine you received a gadget that changes your personality. But it awakens a serial killer in you. This is exactly what happened to the hero of the comic book \"The letter of death. The last sentence\". He became a beta tester of the character-changing gadget Ego. But suddenly, brutal murders began in the city. And all the traces lead to the main character. Who is he really? Will he be able to overcome his dark side? Immerse yourself in the fascinating world of dual personalities and unexpected twists and turns in the comic book \"The Letter of Death. The last sentence\".",
 
-        "comics-left-btn": "<-",
-        "comics-right-btn": "->"
+        "comics-2-about-h3": "Way home",
+        "comics-2-about-alt": "Cover of the comic book \"Way home\"",
+        "comics-2-about-paragraph": "Imagine you have to flee your home because of a disaster. And then you find out that you can return there. That's exactly what happens to the characters in the comic book \"Way home\". Once upon a time, friends Ihor and Danylo fled their home village because of the effects of a meteorite. Now they hear that they can return there. Despite the dangers, the boys embark on a risky journey home. It becomes a test of their friendship and courage. Will they reach their goal? And what awaits them in the destroyed village? Find out in the exciting comic book \"Way home\"!",
+
+        "comics-1-h1": "The letter of death. The last sentence",
+        "comics-1-paragraph-1": "Ego's new gadget promises to change your life. For Victor, however, it becomes a source of terror. After Viktor turns on the device before a party to become more confident, he suddenly loses control of his own body. His dark alternate personality begins to commit brutal murders. Will Victor be able to defeat his own demon? Or will thousands of innocent people fall victim to a mad experiment?",
+        "comics-1-paragraph-2": "Genre: Thriller",
+        "comics-1-paragraph-3": "Release year: 2024",
+        "comics-1-paragraph-4": "Author: Nikita Berezhnyj.",
+        "comics-1-paragraph-5": "Number of pages: 56",
+        "comics-1-paragraph-6": "The comic can be downloaded in .pdf format by clicking here.",        
+        "comics-1-img-alt": "Cover of the comic book \"The letter of death. The last sentence\"",
+
+        "comics-2-h1": "Way home",
+        "comics-2-paragraph-1": "A few years after the disaster in Kif, childhood friends Igor and Danilo embark on a dangerous journey to return home. Despite the warnings, they secretly make their way through the ruined lands full of mutants and dangers. After all, home is not just a building or a place. It is a memory that cannot be lost. Will Igor and Danylo be able to overcome all the obstacles and feel at home again? Is it worth the risk for the sake of a past that cannot be returned? And what does \"home\" really mean?",
+        "comics-2-paragraph-2": "Genre: Adventure",
+        "comics-2-paragraph-3": "Release year: 2024",
+        "comics-2-paragraph-4": "Author: Nikita Berezhnyj.",
+        "comics-2-paragraph-5": "Number of pages: 20",
+        "comics-2-paragraph-6": "The comic can be downloaded in .pdf format by clicking here.",
+        "comics-2-img-alt": "Cover of the comic book \"Way home\""
     },
 
     "book": {
-        "book-tab-1": "About the book",
+        "book-h1": "Books",
+        "book-paragraph": "To be honest, reading books has never been my favorite pastime, and I haven't read that many books in my life. However, the concept of telling a story with words alone has always seemed interesting and challenging to me. And now I've tried my hand at writing fantasy stories myself to overcome this challenge. Although I am not an avid book lover, I hope that my stories will be of interest to readers. The first one, \"Thirtieth Years After Our Time\" is an adventure of a scientist in a post-apocalyptic world. The second one, Intermediate generation, is about a difficult choice between ancestral traditions and one's own path. I really hope that these books will be able to take you to unexplored worlds and make you think about the eternal questions of humanity.",
+        "book-span": "I wish you interesting reading and unforgettable adventures!",
+
+        "book-tab-1": "About",
         "book-tab-2": "Read",
 
-        "book-h1": "The thirtieth year after the meteorite hit",
-        "book-paragraph": "The collection of short stories \"The thirtieth year after the meteorite hit\" will tell you the stories of the inhabitants of the last city on earth, which has changed beyond recognition after the meteorite hit. Whether you want to live in this world is up to you, but it would be good to learn more about it first. The collection of stories \"Thirty Years After the Meteorite\" will tell you about the lives of people in a post-apocalyptic world that has changed beyond recognition after the fall of a large meteorite. You will learn the life stories of different people from different walks of life, in which you will be able to see a mold of the way of life in the new world. Would you want to live in this world? This is a question you have to answer for yourself. But to do so, you will have to dive into this book and learn more about it."
+        "book-1-about-h3": "Thirtieth year after our era",
+        "book-1-about-alt": "Cover of the book \"Thirtieth year after our era\"",
+        "book-1-about-paragraph": "In a post-apocalyptic world, a scientist wakes up after a long sleep. He finds himself in the desert where a city once stood. To find out what happened to humanity, he sets out to find the last settlement under the dome. Will he manage to reach this city and find answers to the questions about the fate of humanity? Is there still hope to save the world from destruction? Read the exciting adventure story about the world of the future to find out!",
+
+        "book-2-about-h3": "Intermediate generation",
+        "book-2-about-alt": "Cover of the book  \"Intermediate generation\"",
+        "book-2-about-paragraph": "In the not-too-distant future, a group of colonists embarks on an intergalactic journey on the spaceship Argo to find a new home on the planet Eden. But they are facing a long and dangerous journey that will last for centuries. Each new generation on board has to decide whether to continue moving into the unknown, or whether it is better to return to Earth or colonize a nearby planet. They are responsible for the fate of all humanity. Will they reach their goal? Read an exciting adventure story about courage, friendship, and the search for a new home among the stars!",
+
+        "book-1-h1": "Thirtieth year after our era",
+        "book-1-paragraph-1": "In the distant future, a scientist wakes up after a long sleep and sees a post-apocalyptic world. The only center of life is a giant dome-shaped complex. Traveling there, the scientist finds a traveler's diary describing the new world. And under the dome, he learns terrible things about the past ruler. Realizing that it is impossible to save this world, the scientist makes a radical decision. He creates a device to send a warning to the past and try to change everything.",
+        "book-1-paragraph-2": "Genre: Post-apocalypse",
+        "book-1-paragraph-3": "Release year: 2024",
+        "book-1-paragraph-4": "Author: Nikita Berezhnyjj",
+        "book-1-paragraph-5": "Number of pages: 65",
+        "book-1-paragraph-6": "The book can be downloaded in .pdf format by clicking on the button",
+
+        "book-2-h1": "Intermediate generation",
+        "book-2-paragraph-1": "The distant future. Humanity is on the brink of destruction. Devastating wars and environmental disasters have destroyed the planet. But a group of scientists develops a desperate plan to save the day - an intergalactic journey to a potentially habitable exoplanet. Their starship Argo embarks on a long journey that will take hundreds of years. On board are 150 selected colonists who are destined to become the parents of a new civilization. However, they will face incredible trials along the way. Mutinies, disasters, loss of landmarks. Will the crew survive this arduous crusade to a new home? And what awaits them in the uncharted galaxy?",
+        "book-2-paragraph-2": "Genre: Sci-Fi",
+        "book-2-paragraph-3": "Release year: 2024",
+        "book-2-paragraph-4": "Author: Nikita Berezhnyjj",
+        "book-2-paragraph-5": "Number of pages: 34",
+        "book-2-paragraph-6": "The book can be downloaded in .pdf format by clicking on the button"
+    },
+
+    "modal": {
+        "modal-h1": "Attention!",
+        "modal-p-1": "Unfortunately, this project is not ready yet. We have decided to continue its development, but without a specific completion date. We apologize for the inconvenience.",
+        "modal-p-2": "You can return to ",
+        "modal-link-1": "home page",
+        "modal-p-3": "or return to ",
+        "modal-link-2": "games page",
+        "modal-p-4": ". We hope to offer you a ready-made and high-quality product soon."
+    },
+
+    "404": {
+        "404-h1": "Something seems to be wrong...",
+        "404-alt-text": "Project logo",
+        "404-link": "Back to the main page?",
+        "404-p": "Unfortunately, the page was not found using this link. It may have been deleted, moved, or never existed."
     },
 
     "footer":{

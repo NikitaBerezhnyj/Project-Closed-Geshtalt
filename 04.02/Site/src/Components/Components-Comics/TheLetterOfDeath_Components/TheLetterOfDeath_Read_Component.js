@@ -80,7 +80,7 @@ export default function TheLetterOfDeath_Reader_Component() {
         let pageComicsNum = 1;
 
         function updateComicsImage() {
-            const imagePath = `/materials/comics/${i18n.language}/${pageComicsNum}.jpg`;
+            const imagePath = `/materials/comics/TheLetterOfDeath/${i18n.language}/${pageComicsNum}.png`;
             pageComics.src = imagePath;
             pageNum.textContent = pageComicsNum;
         }
@@ -117,7 +117,7 @@ export default function TheLetterOfDeath_Reader_Component() {
             <div className='reader-comics'>
                 <button className="left-btn-comics" id="left-btn-comics" style={{ width: "50%" }}>{t("comics.comics-left-btn")}</button>
                 <div className='page-wrap'>
-                    <img src="/home/nikname/Проекти/Project-Closed-Geshtalt/04.02/Site/project_close_geshtalt/public/materials/comics/1.jpg" id="page-comics" alt='Сторінка комікса' className='comics-page'></img>
+                    <img src="/materials/comics/TheLetterOfDeath/${i18n.language}/${pageComicsNum}.png" id="page-comics" alt='Сторінка комікса' className='comics-page'></img>
                 </div>
                 <button className="right-btn-comics" id="right-btn-comics" style={{ width: "50%" }}>{t("comics.comics-right-btn")}</button>
             </div>

@@ -28,18 +28,20 @@ define gui.accent_color = '#00cc99'
 
 ## Колір, який використовується для текстової кнопки, коли вона не вибрана і не
 ## наведена.
-define gui.idle_color = '#888888'
+# define gui.idle_color = '#888888'
+define gui.idle_color = '#ffffff'
 
 ## Дрібний колір використовується для дрібного тексту, який має бути яскравішим/
 ## темнішим, щоб досягти того самого ефекту.
-define gui.idle_small_color = '#aaaaaa'
+# define gui.idle_small_color = '#aaaaaa'
+define gui.idle_small_color = '#ffffff'
 
 ## Колір, який використовується для кнопок і смуг, на які наводяться.
 define gui.hover_color = '#66e0c1'
 
 ## Колір, який використовується для текстової кнопки, коли вона вибрана, але не
 ## в фокусі. Кнопку вибрано, якщо це поточний екран або значення параметра.
-define gui.selected_color = '#ffffff'
+define gui.selected_color = '#66e0c1'
 
 ## Колір текстової кнопки, якщо її неможливо вибрати.
 define gui.insensitive_color = '#8888887f'
@@ -58,13 +60,13 @@ define gui.interface_text_color = '#ffffff'
 ## Шрифти та розміри шрифтів ###################################################
 
 ## Шрифт, який використовується для тексту в грі.
-define gui.text_font = "fonts/PTSans-Italic.ttf"
+define gui.text_font = "fonts/FixelText-Regular.otf"
 
 ## Шрифт, який використовується для імен символів.
-define gui.name_text_font = "fonts/Oswald-VariableFont_wght.ttf"
+define gui.name_text_font = "fonts/FixelText-Regular.otf"
 
-## Шрифт, який використовується для тексту поза грою.
-define gui.interface_text_font = "fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf"
+## Шрифт, який використовується для інтерфейсу гри.
+define gui.interface_text_font = "fonts/NeutralFace.otf"
 
 ## Розмір звичайного тексту діалогу.
 define gui.text_size = 24
@@ -198,7 +200,7 @@ define gui.quick_button_text_selected_color = gui.accent_color
 ## назвами. Наприклад, ви можете розкоментувати наступний рядок, щоб встановити
 ## ширину кнопки навігації.
 
-# define gui.navigation_button_width = 250
+define gui.navigation_button_width = 250
 
 
 ## Кнопки вибору ###############################################################

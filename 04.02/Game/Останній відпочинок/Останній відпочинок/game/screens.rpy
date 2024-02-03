@@ -287,54 +287,102 @@ style quick_button_text:
 ## меню та початок гри.
 
 screen navigation():
+    if renpy.get_screen("main_menu"):
+        hbox:
+            style_prefix "hnavigation"
 
-    vbox:
-        style_prefix "navigation"
+            xalign 0.5
+            yalign 1.0
+            yoffset -50
 
-        xpos gui.navigation_xpos
-        yalign 0.5
+            spacing gui.navigation_spacing
 
-        spacing gui.navigation_spacing
+            if main_menu:
 
-        if main_menu:
+                textbutton _("Почати") action Start()
 
-            textbutton _("Почати") action Start()
+            else:
 
-        else:
+                textbutton _("Історія") action ShowMenu("history")
 
-            textbutton _("Історія") action ShowMenu("history")
+                textbutton _("Зберегти") action ShowMenu("save")
 
-            textbutton _("Зберегти") action ShowMenu("save")
+            textbutton _("Завантажити") action ShowMenu("load")
 
-        textbutton _("Завантажити") action ShowMenu("load")
+            textbutton _("Галерея") action ShowMenu("gallery")
 
-        textbutton _("Галерея") action ShowMenu("gallery")
+            textbutton _("Налаштування") action ShowMenu("preferences")
 
-        textbutton _("Налаштування") action ShowMenu("preferences")
+            if _in_replay:
 
-        if _in_replay:
+                textbutton _("Кінець повтору") action EndReplay(confirm=True)
 
-            textbutton _("Кінець повтору") action EndReplay(confirm=True)
+            elif not main_menu:
 
-        elif not main_menu:
+                textbutton _("Головне меню") action MainMenu()
 
-            textbutton _("Головне меню") action MainMenu()
+            textbutton _("Про гру") action ShowMenu("about")
 
-        textbutton _("Про гру") action ShowMenu("about")
+            if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
-        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
+                ## Допомога не є необхідною або актуальною для мобільних пристроїв.
+                textbutton _("Довідка") action ShowMenu("help")
 
-            ## Допомога не є необхідною або актуальною для мобільних пристроїв.
-            textbutton _("Довідка") action ShowMenu("help")
+            if renpy.variant("pc"):
 
-        if renpy.variant("pc"):
+                ## Кнопка виходу заборонена на iOS і непотрібна на Android і в Веб.
+                textbutton _("Вийти") action Quit(confirm=not main_menu)
+    else:
+        vbox:
+            style_prefix "navigation"
 
-            ## Кнопка виходу заборонена на iOS і непотрібна на Android і в Веб.
-            textbutton _("Вийти") action Quit(confirm=not main_menu)
+            xpos gui.navigation_xpos
+            yalign 0.5
+
+            spacing gui.navigation_spacing
+
+            if main_menu:
+
+                textbutton _("Почати") action Start()
+
+            else:
+
+                textbutton _("Історія") action ShowMenu("history")
+
+                textbutton _("Зберегти") action ShowMenu("save")
+
+            textbutton _("Завантажити") action ShowMenu("load")
+
+            textbutton _("Галерея") action ShowMenu("gallery")
+
+            textbutton _("Налаштування") action ShowMenu("preferences")
+
+            if _in_replay:
+
+                textbutton _("Кінець повтору") action EndReplay(confirm=True)
+
+            elif not main_menu:
+
+                textbutton _("Головне меню") action MainMenu()
+
+            textbutton _("Про гру") action ShowMenu("about")
+
+            if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
+
+                ## Допомога не є необхідною або актуальною для мобільних пристроїв.
+                textbutton _("Довідка") action ShowMenu("help")
+
+            if renpy.variant("pc"):
+
+                ## Кнопка виходу заборонена на iOS і непотрібна на Android і в Веб.
+                textbutton _("Вийти") action Quit(confirm=not main_menu)
 
 
 style navigation_button is gui_button
 style navigation_button_text is gui_button_text
+style hnavigation_button is navigation_button
+style hnavigation_button_text is navigation_button_text
+
 
 style navigation_button:
     size_group "navigation"
@@ -342,6 +390,10 @@ style navigation_button:
 
 style navigation_button_text:
     properties gui.button_text_properties("navigation_button")
+    xalign 0.0
+
+style hnavigation_button_text:
+    xalign 0.5
 
 
 
@@ -496,7 +548,7 @@ style main_menu_frame:
     xsize 420
     yfill True
 
-    background "gui/overlay/main_menu.png"
+    # background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
     xalign 1.0

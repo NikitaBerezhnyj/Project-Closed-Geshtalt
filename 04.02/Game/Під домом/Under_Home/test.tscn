@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://b1m42744lxkba"]
+
+[ext_resource type="PackedScene" uid="uid://bw657kvo0cqv4" path="res://Scenes/Rooms/Horizontal/story_room_0.tscn" id="1_jhr2x"]
+[ext_resource type="PackedScene" uid="uid://btfioamrv210m" path="res://Scenes/Characters/Player.tscn" id="2_gukds"]
+
+[node name="test" type="Node2D"]
+
+[node name="StoryRoom0" parent="." instance=ExtResource("1_jhr2x")]
+position = Vector2(-2, -1)
+
+[node name="Player" parent="." instance=ExtResource("2_gukds")]
+position = Vector2(-174, 310)

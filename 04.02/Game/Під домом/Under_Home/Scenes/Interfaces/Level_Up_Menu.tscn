@@ -1,0 +1,58 @@
+[gd_scene load_steps=4 format=3 uid="uid://d14r51ltro7r0"]
+
+[ext_resource type="Script" path="res://Scripts/Level_Up_Menu.gd" id="1_hcn76"]
+
+[sub_resource type="Gradient" id="Gradient_3rb5i"]
+colors = PackedColorArray(0, 0, 0, 0.568627, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_g7fgo"]
+gradient = SubResource("Gradient_3rb5i")
+fill_from = Vector2(1, 0)
+
+[node name="Level_Up_Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hcn76")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_g7fgo")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -539.0
+offset_top = -296.0
+offset_right = 552.0
+offset_bottom = 284.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PowerCart0" type="Button" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="PowerCart1" type="Button" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+
+[node name="PowerCart2" type="Button" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[connection signal="pressed" from="MarginContainer/PowerCart0" to="." method="_on_power_cart_0_pressed"]
+[connection signal="pressed" from="MarginContainer/PowerCart1" to="." method="_on_power_cart_1_pressed"]
+[connection signal="pressed" from="MarginContainer/PowerCart2" to="." method="_on_power_cart_2_pressed"]

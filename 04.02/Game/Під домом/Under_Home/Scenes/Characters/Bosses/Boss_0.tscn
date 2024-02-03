@@ -1,0 +1,41 @@
+[gd_scene load_steps=7 format=3 uid="uid://dsidyw0svw1jw"]
+
+[ext_resource type="Script" path="res://Scripts/Boss_Neglecting_Needs.gd" id="1_s7lh5"]
+[ext_resource type="Texture2D" uid="uid://cfiqbouf1rved" path="res://Graphics/Custom_Matrials/boss_0.png" id="2_cewqk"]
+[ext_resource type="Texture2D" uid="uid://chrgbsm08hd71" path="res://Graphics/Custom_Matrials/ui/empty_hp_bar_enemy.png" id="3_65bqp"]
+[ext_resource type="Texture2D" uid="uid://ceigrdwkj1xem" path="res://Graphics/Custom_Matrials/ui/full_hp_bar_enemy.png" id="4_jdwuf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mq2nm"]
+size = Vector2(6, 27)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jd760"]
+size = Vector2(10, 64)
+
+[node name="Boss_0" type="CharacterBody2D" groups=["boss"]]
+script = ExtResource("1_s7lh5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("2_cewqk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -16.5)
+shape = SubResource("RectangleShape2D_mq2nm")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-1, 0)
+shape = SubResource("RectangleShape2D_jd760")
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+texture_filter = 1
+offset_left = -16.0
+offset_top = -46.0
+offset_right = 16.0
+offset_bottom = -37.0
+value = 100.0
+texture_under = ExtResource("3_65bqp")
+texture_progress = ExtResource("4_jdwuf")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

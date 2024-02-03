@@ -1,0 +1,41 @@
+[gd_scene load_steps=7 format=3 uid="uid://c21jpvgwlwwlx"]
+
+[ext_resource type="Script" path="res://Scripts/Bullet.gd" id="1_3yaf1"]
+[ext_resource type="Texture2D" uid="uid://inhrt23jhflj" path="res://Graphics/Custom_Matrials/bullet.png" id="2_xivqs"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4hfo1"]
+radius = 6.08276
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_er8f7"]
+radius = 8.0
+
+[sub_resource type="Gradient" id="Gradient_ebimx"]
+offsets = PackedFloat32Array(0.00546448, 0.754098)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_b4jby"]
+gradient = SubResource("Gradient_ebimx")
+fill = 1
+fill_from = Vector2(0.491453, 0.508547)
+
+[node name="Bullet" type="CharacterBody2D" groups=["bullet"]]
+script = ExtResource("1_3yaf1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+self_modulate = Color(0.533333, 0.533333, 0.533333, 1)
+texture_filter = 1
+texture = ExtResource("2_xivqs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_4hfo1")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D(2)" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_er8f7")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+texture = SubResource("GradientTexture2D_b4jby")
+texture_scale = 1.5
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

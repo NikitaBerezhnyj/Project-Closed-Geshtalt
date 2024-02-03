@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e6d02968.css",
+    "main.js": "/static/js/main.ea3f95ab.js",
+    "static/js/787.543b0a3e.chunk.js": "/static/js/787.543b0a3e.chunk.js",
+    "static/media/FixelText-Regular.otf": "/static/media/FixelText-Regular.79f1d254a7519c2c0136.otf",
+    "index.html": "/index.html",
+    "main.e6d02968.css.map": "/static/css/main.e6d02968.css.map",
+    "main.ea3f95ab.js.map": "/static/js/main.ea3f95ab.js.map",
+    "787.543b0a3e.chunk.js.map": "/static/js/787.543b0a3e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6d02968.css",
+    "static/js/main.ea3f95ab.js"
+  ]
+}

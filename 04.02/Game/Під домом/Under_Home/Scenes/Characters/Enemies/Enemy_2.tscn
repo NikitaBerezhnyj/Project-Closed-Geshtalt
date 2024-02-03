@@ -1,0 +1,67 @@
+[gd_scene load_steps=11 format=3 uid="uid://cj80q2lmj4jd8"]
+
+[ext_resource type="Script" path="res://Scripts/Simple_Enemy_2.gd" id="1_icodw"]
+[ext_resource type="Texture2D" uid="uid://boue54iu58v7f" path="res://Graphics/Custom_Matrials/characters/simple_enemy_1/run/simple_enemy_1_run_0001.png" id="2_g74yv"]
+[ext_resource type="Texture2D" uid="uid://chrgbsm08hd71" path="res://Graphics/Custom_Matrials/ui/empty_hp_bar_enemy.png" id="3_u85rf"]
+[ext_resource type="Texture2D" uid="uid://cop322vjujnbf" path="res://Graphics/Custom_Matrials/characters/simple_enemy_1/run/simple_enemy_1_run_0002.png" id="3_vc21m"]
+[ext_resource type="Texture2D" uid="uid://ceigrdwkj1xem" path="res://Graphics/Custom_Matrials/ui/full_hp_bar_enemy.png" id="4_eedrd"]
+[ext_resource type="Texture2D" uid="uid://wmuxwvkw4ojn" path="res://Graphics/Custom_Matrials/characters/simple_enemy_1/run/simple_enemy_1_run_0003.png" id="4_yfcra"]
+[ext_resource type="Texture2D" uid="uid://sl7gl4jrkq11" path="res://Graphics/Custom_Matrials/characters/simple_enemy_1/run/simple_enemy_1_run_0004.png" id="5_uoeeq"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_62atb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_g74yv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_vc21m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_yfcra")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_uoeeq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_trqhx"]
+size = Vector2(12, 5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sfaxc"]
+size = Vector2(25, 12)
+
+[node name="Simple_Enemy_2" type="CharacterBody2D" groups=["enemys", "simple_enemy_2"]]
+script = ExtResource("1_icodw")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_62atb")
+autoplay = "default"
+frame = 1
+frame_progress = 0.249336
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1.5)
+shape = SubResource("RectangleShape2D_trqhx")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-0.5, -1)
+shape = SubResource("RectangleShape2D_sfaxc")
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+texture_filter = 1
+offset_left = -16.0
+offset_top = -18.0
+offset_right = 16.0
+offset_bottom = -9.0
+value = 100.0
+texture_under = ExtResource("3_u85rf")
+texture_progress = ExtResource("4_eedrd")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

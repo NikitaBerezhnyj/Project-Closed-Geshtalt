@@ -1,0 +1,99 @@
+[gd_scene load_steps=3 format=3 uid="uid://dpkn8xgwnd3rd"]
+
+[ext_resource type="Script" path="res://Scripts/Options_Menu.gd" id="1_5twic"]
+[ext_resource type="Script" path="res://Scripts/Button.gd" id="2_lye64"]
+
+[node name="Options_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5twic")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 38.0
+offset_right = -31.0
+offset_bottom = -59.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Graphic_Settings_VBox" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="Label" type="Label" parent="MarginContainer/Graphic_Settings_VBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "Graphics"
+horizontal_alignment = 1
+
+[node name="ScreenSize" type="VBoxContainer" parent="MarginContainer/Graphic_Settings_VBox"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/Graphic_Settings_VBox/ScreenSize"]
+layout_mode = 2
+text = "Screen Size"
+
+[node name="OptionButton" type="OptionButton" parent="MarginContainer/Graphic_Settings_VBox/ScreenSize"]
+layout_mode = 2
+script = ExtResource("2_lye64")
+
+[node name="Graphic_Options" type="HBoxContainer" parent="MarginContainer/Graphic_Settings_VBox"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/Graphic_Settings_VBox/Graphic_Options"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/Graphic_Settings_VBox/Graphic_Options/HBoxContainer"]
+layout_mode = 2
+text = "FullScreen"
+
+[node name="FullScreen_check" type="CheckBox" parent="MarginContainer/Graphic_Settings_VBox/Graphic_Options/HBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/Graphic_Settings_VBox/Graphic_Options"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/Graphic_Settings_VBox/Graphic_Options/HBoxContainer2"]
+layout_mode = 2
+text = "Borderless Windowed"
+
+[node name="Borderless_Windowed_check" type="CheckBox" parent="MarginContainer/Graphic_Settings_VBox/Graphic_Options/HBoxContainer2"]
+layout_mode = 2
+
+[node name="Audio_Settings_VBox" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="MarginContainer/Audio_Settings_VBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "Audio"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Back"
+
+[connection signal="item_selected" from="MarginContainer/Graphic_Settings_VBox/ScreenSize/OptionButton" to="." method="_on_option_button_item_selected"]
+[connection signal="pressed" from="MarginContainer/Graphic_Settings_VBox/Graphic_Options/HBoxContainer/FullScreen_check" to="." method="_on_full_screen_check_pressed"]
+[connection signal="pressed" from="MarginContainer/Graphic_Settings_VBox/Graphic_Options/HBoxContainer2/Borderless_Windowed_check" to="." method="_on_borderless_windowed_check_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]

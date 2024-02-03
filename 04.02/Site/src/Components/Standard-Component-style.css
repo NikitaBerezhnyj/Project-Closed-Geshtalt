@@ -50,6 +50,9 @@ span{
 .mar-auto{
     margin: 0 auto;
 }
+.mar-16{
+    margin-bottom: 16px;
+}
 .mar-24{
     margin-bottom: 24px;
 }

@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://dv07sxoahyccu"]
+
+[ext_resource type="Texture2D" uid="uid://cwljdlsqidsbj" path="res://Graphics/Custom_Matrials/light_mashroom.png" id="1_glbmu"]
+
+[sub_resource type="Gradient" id="Gradient_6atkl"]
+offsets = PackedFloat32Array(0.00546448, 0.754098)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_8w7bl"]
+gradient = SubResource("Gradient_6atkl")
+fill = 1
+fill_from = Vector2(0.491453, 0.508547)
+
+[node name="Light_mushroom" type="Node2D"]
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+texture = SubResource("GradientTexture2D_8w7bl")
+texture_scale = 2.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_glbmu")

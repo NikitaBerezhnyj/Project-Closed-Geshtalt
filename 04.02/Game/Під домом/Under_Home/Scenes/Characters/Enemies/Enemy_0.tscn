@@ -1,0 +1,81 @@
+[gd_scene load_steps=14 format=3 uid="uid://cxwaqw5526blr"]
+
+[ext_resource type="Script" path="res://Scripts/Simple_Enemy_0.gd" id="1_b61wd"]
+[ext_resource type="Texture2D" uid="uid://bacetg2w3aivx" path="res://Graphics/Custom_Matrials/characters/simple_enemy_0/run/simple_enemy_0_run_0001.png" id="2_xs7i5"]
+[ext_resource type="Texture2D" uid="uid://chrgbsm08hd71" path="res://Graphics/Custom_Matrials/ui/empty_hp_bar_enemy.png" id="3_khamb"]
+[ext_resource type="Texture2D" uid="uid://c7p4v58y8a7j2" path="res://Graphics/Custom_Matrials/characters/simple_enemy_0/run/simple_enemy_0_run_0002.png" id="3_p4is1"]
+[ext_resource type="Texture2D" uid="uid://ceigrdwkj1xem" path="res://Graphics/Custom_Matrials/ui/full_hp_bar_enemy.png" id="4_7kf1x"]
+[ext_resource type="Texture2D" uid="uid://byi73t3r8ithx" path="res://Graphics/Custom_Matrials/characters/simple_enemy_0/run/simple_enemy_0_run_0003.png" id="4_wcy83"]
+[ext_resource type="Texture2D" uid="uid://c3b7hejbcn8gn" path="res://Graphics/Custom_Matrials/characters/simple_enemy_0/run/simple_enemy_0_run_0004.png" id="5_4hq3q"]
+[ext_resource type="Texture2D" uid="uid://ibajv4jb2mc3" path="res://Graphics/Custom_Matrials/characters/simple_enemy_0/run/simple_enemy_0_run_0005.png" id="6_volan"]
+[ext_resource type="Texture2D" uid="uid://bn3eahpn82r6n" path="res://Graphics/Custom_Matrials/characters/simple_enemy_0/run/simple_enemy_0_run_0006.png" id="7_68bfe"]
+[ext_resource type="Texture2D" uid="uid://clr7a55y2kjru" path="res://Graphics/Custom_Matrials/characters/simple_enemy_0/run/simple_enemy_0_run_0007.png" id="8_ckfy6"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w6ax6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_xs7i5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_p4is1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_wcy83")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_4hq3q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_volan")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_68bfe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ckfy6")
+}],
+"loop": true,
+"name": &"run",
+"speed": 12.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nuq65"]
+size = Vector2(14, 19)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_85sma"]
+size = Vector2(23, 27)
+
+[node name="Simple_Enemy_0" type="CharacterBody2D" groups=["enemys", "simple_enemy_0"]]
+script = ExtResource("1_b61wd")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0.499999, 2.5)
+sprite_frames = SubResource("SpriteFrames_w6ax6")
+animation = &"run"
+autoplay = "run"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(0, 2.5)
+shape = SubResource("RectangleShape2D_nuq65")
+
+[node name="Area2D" type="Area2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1, 3)
+shape = SubResource("RectangleShape2D_85sma")
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+texture_filter = 1
+offset_left = -16.0
+offset_top = -22.0
+offset_right = 16.0
+offset_bottom = -13.0
+value = 100.0
+texture_under = ExtResource("3_khamb")
+texture_progress = ExtResource("4_7kf1x")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

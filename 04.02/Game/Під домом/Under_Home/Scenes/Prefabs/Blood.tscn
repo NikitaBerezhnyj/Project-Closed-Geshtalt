@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://dgata6umeetk1"]
+
+[ext_resource type="Script" path="res://Scripts/Blood.gd" id="1_1q87i"]
+
+[sub_resource type="Gradient" id="Gradient_wfmev"]
+offsets = PackedFloat32Array(0, 0.0116959)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_c4ovm"]
+gradient = SubResource("Gradient_wfmev")
+
+[node name="Blood" type="CPUParticles2D"]
+z_index = -5
+amount = 32
+lifetime = 0.2
+explosiveness = 1.0
+fixed_fps = 60
+texture = SubResource("GradientTexture2D_c4ovm")
+spread = 25.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 100.0
+initial_velocity_max = 290.0
+scale_amount_min = 0.01
+scale_amount_max = 0.09
+color = Color(0.435294, 0.113725, 0.133333, 1)
+script = ExtResource("1_1q87i")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.15
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

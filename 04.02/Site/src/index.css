@@ -7,6 +7,11 @@
   -moz-osx-font-smoothing: grayscale;
 } */
 
+@font-face {
+  font-family: 'Fixel';
+  src: url('../public/fonts/FixelText-Regular.otf') format('truetype');
+}
+
 html{
   color: #EDEDED;
   background-color: #171717;
@@ -15,7 +20,8 @@ html{
 body {
   color: #EDEDED;
   background-color: #171717;
-  font-family: 'Montserrat', sans-serif;
+  font-family: Fixel, sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
 }
 
 /* code {
@@ -23,6 +29,6 @@ body {
     monospace;
 } */
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
+} */

@@ -1,0 +1,25 @@
+.not-fount-container{
+    height: 100vh;
+    width: 100vw;
+    padding: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.not-fount-content {
+    text-align: start;
+}
+.not-fount-content h1 {
+    font-size: 4rem;
+    margin-bottom: 16px;
+}
+.not-fount-content p {
+    margin: auto;
+    margin-bottom: 24px;
+}
+
+.not-fount-img img {
+    width: 50%;
+    margin-bottom: 36px;
+}

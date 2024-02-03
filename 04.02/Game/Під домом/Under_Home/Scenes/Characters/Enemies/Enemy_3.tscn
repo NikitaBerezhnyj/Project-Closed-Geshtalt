@@ -1,0 +1,120 @@
+[gd_scene load_steps=22 format=3 uid="uid://cffr76y1nxkj3"]
+
+[ext_resource type="Script" path="res://Scripts/Simple_Enemy_3.gd" id="1_0ci2b"]
+[ext_resource type="Texture2D" uid="uid://bi5wi7tn5ftyp" path="res://Graphics/Custom_Matrials/characters/simple_enemy_3/run/simple_enemy_3_run_0001.png" id="2_a4wwl"]
+[ext_resource type="Texture2D" uid="uid://chrgbsm08hd71" path="res://Graphics/Custom_Matrials/ui/empty_hp_bar_enemy.png" id="3_3tv7l"]
+[ext_resource type="Texture2D" uid="uid://b3uvw0a8rmfhc" path="res://Graphics/Custom_Matrials/characters/simple_enemy_3/run/simple_enemy_3_run_0002.png" id="3_n6avn"]
+[ext_resource type="Texture2D" uid="uid://dbe4xohltewyc" path="res://Graphics/Custom_Matrials/characters/simple_enemy_3/run/simple_enemy_3_run_0003.png" id="4_pvr8b"]
+[ext_resource type="Texture2D" uid="uid://ceigrdwkj1xem" path="res://Graphics/Custom_Matrials/ui/full_hp_bar_enemy.png" id="4_v6sc6"]
+[ext_resource type="Texture2D" uid="uid://qefr080yux4r" path="res://Graphics/Custom_Matrials/characters/simple_enemy_3/run/simple_enemy_3_run_0004.png" id="5_io56n"]
+[ext_resource type="Texture2D" uid="uid://dptruioeossk3" path="res://Graphics/Custom_Matrials/characters/simple_enemy_3/run/simple_enemy_3_run_0005.png" id="6_hi33d"]
+[ext_resource type="Texture2D" uid="uid://cgfjx1b43iciu" path="res://Graphics/Custom_Matrials/characters/simple_enemy_3/run/simple_enemy_3_run_0006.png" id="7_nfnvg"]
+[ext_resource type="Texture2D" uid="uid://bcymvnvkwyak5" path="res://Graphics/Custom_Matrials/characters/simple_enemy_3/run/simple_enemy_3_run_0007.png" id="8_4wf6x"]
+[ext_resource type="Texture2D" uid="uid://ded620licgmn6" path="res://Graphics/Custom_Matrials/characters/simple_enemy_3/run/simple_enemy_3_run_0008.png" id="9_tdpay"]
+[ext_resource type="Texture2D" uid="uid://bbwhxkcdrfa5e" path="res://Graphics/Custom_Matrials/characters/simple_enemy_3/run/simple_enemy_3_run_0009.png" id="10_1cpg5"]
+[ext_resource type="Texture2D" uid="uid://bhutythatnfah" path="res://Graphics/Custom_Matrials/characters/simple_enemy_3/run/simple_enemy_3_run_0010.png" id="11_gc85t"]
+[ext_resource type="Texture2D" uid="uid://dvhecqubtfu4a" path="res://Graphics/Custom_Matrials/characters/simple_enemy_3/run/simple_enemy_3_run_0011.png" id="12_spcq1"]
+[ext_resource type="Texture2D" uid="uid://bxxw8id37n3gu" path="res://Graphics/Custom_Matrials/characters/simple_enemy_3/run/simple_enemy_3_run_0012.png" id="13_rdv3b"]
+[ext_resource type="Texture2D" uid="uid://bcwh1p2lq2832" path="res://Graphics/Custom_Matrials/characters/simple_enemy_3/run/simple_enemy_3_run_0013.png" id="14_xa747"]
+[ext_resource type="Texture2D" uid="uid://dtxexcngxre2k" path="res://Graphics/Custom_Matrials/characters/simple_enemy_3/simple_enemy_3.png" id="15_x7685"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lxkcp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_a4wwl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_n6avn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_pvr8b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_io56n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hi33d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_nfnvg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_4wf6x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_tdpay")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_1cpg5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_gc85t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_spcq1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_rdv3b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_xa747")
+}],
+"loop": true,
+"name": &"attack",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_x7685")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nuq65"]
+size = Vector2(17, 21)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_85sma"]
+size = Vector2(27, 32)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ntth4"]
+radius = 129.19
+
+[node name="Simple_Enemy_3" type="CharacterBody2D" groups=["enemys", "simple_enemy_3"]]
+script = ExtResource("1_0ci2b")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_lxkcp")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.5, 0.5)
+shape = SubResource("RectangleShape2D_nuq65")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1.5, 0)
+shape = SubResource("RectangleShape2D_85sma")
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+texture_filter = 1
+offset_left = -16.0
+offset_top = -28.0
+offset_right = 16.0
+offset_bottom = -19.0
+value = 100.0
+texture_under = ExtResource("3_3tv7l")
+texture_progress = ExtResource("4_v6sc6")
+
+[node name="Area2D2" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+shape = SubResource("CircleShape2D_ntth4")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Area2D2" to="." method="_on_area_2d_2_body_entered"]

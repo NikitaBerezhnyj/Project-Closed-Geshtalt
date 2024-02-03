@@ -144,7 +144,7 @@ export default function WayHome_Reader_Component() {
         let pageComicsNum = 1;
 
         function updateComicsImage() {
-            const imagePath = `/materials/comics/${i18n.language}/${pageComicsNum}.jpg`;
+            const imagePath = `/materials/comics/WayHome/${i18n.language}/${pageComicsNum}.png`;
             pageComics.src = imagePath;
             pageNum.textContent = pageComicsNum;
         }
@@ -159,7 +159,7 @@ export default function WayHome_Reader_Component() {
         });
 
         rightBtnComics.addEventListener("click", () => {
-            if (pageComicsNum === 56) {
+            if (pageComicsNum === 20) {
                 alert("Last page");
             } else {
                 pageComicsNum += 1;
@@ -181,12 +181,12 @@ export default function WayHome_Reader_Component() {
             <div className='reader-comics'>
                 <button className="left-btn-comics" id="left-btn-comics" style={{ width: "50%" }}>{t("comics.comics-left-btn")}</button>
                 <div className='page-wrap'>
-                    <img src="/home/nikname/Проекти/Project-Closed-Geshtalt/04.02/Site/project_close_geshtalt/public/materials/comics/1.jpg" id="page-comics" alt='Сторінка комікса' className='comics-page'></img>
+                    <img src="/materials/comics/WayHome/${i18n.language}/${pageComicsNum}.png" id="page-comics" alt='Сторінка комікса' className='comics-page'></img>
                 </div>
                 <button className="right-btn-comics" id="right-btn-comics" style={{ width: "50%" }}>{t("comics.comics-right-btn")}</button>
             </div>
             <div>
-                <span id="page-num" className='span-bold'>1</span><span className='span-bold'> / 56</span>
+                <span id="page-num" className='span-bold'>1</span><span className='span-bold'> / 20</span>
             </div>
         </div>
     )

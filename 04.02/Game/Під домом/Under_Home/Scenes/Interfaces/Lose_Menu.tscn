@@ -1,0 +1,58 @@
+[gd_scene load_steps=4 format=3 uid="uid://bkj4i3imkgra3"]
+
+[ext_resource type="Script" path="res://Scripts/Lose_Menu.gd" id="1_25gpi"]
+[ext_resource type="Texture2D" uid="uid://drkhxpoym1gm0" path="res://Graphics/Other_Materials/Background/Gray.png" id="2_mvpbp"]
+[ext_resource type="Script" path="res://Scripts/Button.gd" id="3_gs6s2"]
+
+[node name="Lose Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_25gpi")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(0.14902, 0.14902, 0.14902, 0.411765)
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_mvpbp")
+stretch_mode = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="Restart" type="Button" parent="MarginContainer/VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+text = "Restart"
+script = ExtResource("3_gs6s2")
+
+[node name="Load_Save" type="Button" parent="MarginContainer/VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+text = "Load save"
+
+[node name="BackToMenu" type="Button" parent="MarginContainer/VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+text = "Back to main menu"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Load_Save" to="." method="_on_load_save_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/BackToMenu" to="." method="_on_back_to_menu_pressed"]

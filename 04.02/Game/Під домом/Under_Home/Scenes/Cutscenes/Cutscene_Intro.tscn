@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=3 uid="uid://bwo43hkgjt62k"]
+
+[ext_resource type="Script" path="res://Scripts/cutscene_intro.gd" id="1_gfblw"]
+[ext_resource type="VideoStream" path="res://Graphics/Cutscenes/Intro.ogv" id="2_v2anx"]
+
+[sub_resource type="Gradient" id="Gradient_ncpgm"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_oojxy"]
+gradient = SubResource("Gradient_ncpgm")
+
+[node name="CutScene_Intro" type="Node2D"]
+script = ExtResource("1_gfblw")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+offset_right = 1281.0
+offset_bottom = 721.0
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer"]
+layout_mode = 2
+texture = SubResource("GradientTexture1D_oojxy")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+stream = ExtResource("2_v2anx")
+autoplay = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 83.0
+autostart = true
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1102.0
+offset_top = 637.0
+offset_right = 1229.0
+offset_bottom = 663.0
+grow_horizontal = 0
+grow_vertical = 0
+size_flags_horizontal = 8
+size_flags_vertical = 8
+text = "Press Esc to skip"

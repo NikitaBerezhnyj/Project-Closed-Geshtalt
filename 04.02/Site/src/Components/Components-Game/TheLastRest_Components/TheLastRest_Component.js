@@ -2,6 +2,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { useState } from 'react';
 import { Carousel } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
+import Modal_Component from '../../Component-Modal/Modal-Component';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../Standard-Component-style.css'
 import '../Game.css';
@@ -15,40 +16,41 @@ export default function TheLastRest_Component(){
         setIndex(selectedIndex);
     };
 
+    const [modalActive, setModalActive] = useState(false);
+
     return(
-        <Container fluid className='fluid-fix'>
-            <Row>
-                <Col>
-                    <h1 className='mar-72'>{t("game.game-1-h1")}</h1>
-                </Col>
-            </Row>
-            {/* Слайдер */}
-            <Carousel activeIndex={index} onSelect={handleSelect} interval={2000} className='mar-96'>
-                <Carousel.Item>
-                    <img className="d-block w-50 mar-auto" src="/img/game-screens/game-1/screen1.png" alt="First slide" />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img className="d-block w-50 mar-auto" src="/img/game-screens/game-1/screen2.png" alt="First slide" />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img className="d-block w-50 mar-auto" src="/img/game-screens/game-1/screen3.png" alt="First slide" />
-                </Carousel.Item>
-            </Carousel>
-            {/* Кінець слайдеру */}
-            <Container>
-                <Row className='container-game'>
-                    <p>{t("game.game-1-paragraph-1")}</p>
-                    <p>{t("game.game-1-paragraph-2")}</p>
-                    <p>{t("game.game-1-paragraph-3")}</p>
-                    <p>{t("game.game-1-paragraph-4")}</p>
-                    <p><span>{t("game.game-1-span")}</span></p>
+        <div>
+            <Container fluid className='fluid-fix'>
+                <Row>
+                    <Col>
+                        <h1 className='mar-72'>{t("game.game-1-h1")}</h1>
+                    </Col>
                 </Row>
-                <hr></hr>
-                <Row className='container-game mar-48'>
-                    <p>{t("game.game-1-pre-btn")}</p>
-                    <a href="../materials/The last vacation.zip" target="_blank" download="The last vacation.zip" className="btn w-25">{t("game.game-1-btn")}</a>
-                </Row>
+                {/* Слайдер */}
+                <Carousel activeIndex={index} onSelect={handleSelect} interval={2000} className='mar-96'>
+                    <Carousel.Item>
+                        <img className="d-block w-50 mar-auto" src="/img/game-screens/game-1/screen1.png" alt="First slide image" />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img className="d-block w-50 mar-auto" src="/img/game-screens/game-1/screen2.png" alt="Second slide image" />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img className="d-block w-50 mar-auto" src="/img/game-screens/game-1/screen3.png" alt="First slide image" />
+                    </Carousel.Item>
+                </Carousel>
+                {/* Кінець слайдеру */}
+                <Container>
+                    <Row className='container-game mar-48'>
+                        <p className='mar-16'>{t("game.game-1-paragraph-1")}</p>
+                        <p className='mar-16'>{t("game.game-1-paragraph-2")}</p>
+                        <p className='mar-16'>{t("game.game-1-paragraph-3")}</p>
+                        <p className='mar-16'>{t("game.game-1-paragraph-4")}</p>
+                        <p className='mar-24'>{t("game.game-1-paragraph-5")}</p>
+                        <span className="btn w-25" onClick={() => setModalActive(true)}>{t("about.download")}</span>
+                    </Row>
+                </Container>
             </Container>
-        </Container>
+            <Modal_Component active={modalActive} setActive={setModalActive} downloadPath={"/public/materials/games/The last rest.zip"} downloadName={"The last rest.zip"}/>
+        </div>
     )
 }

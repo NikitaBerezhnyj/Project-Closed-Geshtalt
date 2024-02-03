@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bv5r8c5q45xxe"]
+
+[ext_resource type="Script" path="res://Scripts/Hill.gd" id="1_gmihq"]
+[ext_resource type="Texture2D" uid="uid://chwo33h3ihda3" path="res://Graphics/Custom_Matrials/hill.png" id="2_j0vxh"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8qgc2"]
+radius = 4.12311
+
+[node name="Hill" type="Area2D" groups=["hill"]]
+script = ExtResource("1_gmihq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("2_j0vxh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_8qgc2")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

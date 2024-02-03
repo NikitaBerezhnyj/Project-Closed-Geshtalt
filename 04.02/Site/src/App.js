@@ -20,6 +20,8 @@ import WayHome_Page from './Pages/Comics-Pages/WayHome_Page';
 import Book_Page from './Pages/Book-Pages/Book_Page';
 import ThirtiethYearAfterOurEra_Page from './Pages/Book-Pages/ThirtiethYearAfterOurEra_Page';
 import TheIntermediateGeneration_Page from './Pages/Book-Pages/TheIntermediateGeneration_Page';
+// Сторінка помилки 404
+import Not_Fount_Page from './Pages/Not-Fount-Pages/Not_Fount_Page';
 
 export default function App() {
   return (
@@ -44,6 +46,8 @@ export default function App() {
           <Route path="/book" element={<Book_Page />} />
           <Route path="/book/thirtieth-year-after-our-era" element={<ThirtiethYearAfterOurEra_Page />} />
           <Route path="/book/the-intermediate-generation" element={<TheIntermediateGeneration_Page />} />
+          {/* Помилка 404 */}
+          <Route path='*' element={<Not_Fount_Page />} />
         </Routes>
       </div>
     </Router>
